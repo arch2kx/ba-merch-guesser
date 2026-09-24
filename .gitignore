@@ -1,0 +1,16 @@
+# Dependencies & System Files
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Local Environment & Secrets
+.env
+.env.local
+
+# Logs
+*.log
+
+# TypeScript Build Artifacts
+*.js.map
+*.d.ts
+*.d.ts.map
