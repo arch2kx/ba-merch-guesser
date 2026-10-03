@@ -1,12 +1,18 @@
 {
   "name": "ba-plushies-prices",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "",
+  "devDependencies": {
+    "@types/bun": "^1.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }

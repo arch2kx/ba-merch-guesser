@@ -1,0 +1,25 @@
+{
+  "baStudentsMerch": [
+    {
+      "studentName": "shirokoTerror",
+      "type": "chocopuni",
+      "market": "resale",
+      "sizeType": "standard",
+      "priceUsd": 40.99
+    },
+    {
+      "studentName": "hoshino",
+      "type": "chocopuni",
+      "market": "resale",
+      "sizeType": "large",
+      "priceUsd": 120.00
+    },
+    {
+      "studentName": "izuna",
+      "type": "chocopuni",
+      "market": "resale",
+      "sizeType": "standard",
+      "priceUsd": 55.10
+    }
+  ]
+}
