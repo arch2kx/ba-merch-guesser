@@ -20,6 +20,20 @@
       "market": "resale",
       "sizeType": "standard",
       "priceUsd": 55.10
+    },
+    {
+      "studentName": "kazusa",
+      "type": "chocopuni",
+      "market": "resale",
+      "sizeType": "standard",
+      "priceUsd": 40.99
+    },
+    {
+      "studentName": "yoshimi",
+      "type": "chocopuni",
+      "market": "resale",
+      "sizeType": "standard",
+      "priceUsd": 35.99
     }
   ]
 }

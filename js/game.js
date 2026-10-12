@@ -1,0 +1,4459 @@
+// js/baAmiData.json
+var baAmiData_default = {
+  current_index: 34,
+  items_length: 90,
+  items: [
+    {
+      gcode: "FIGURE-183911-R",
+      scode: "FIGURE-183911-R026",
+      name: "Blue Archive Kikyou 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-183911-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-183911-R026",
+      image_url: "https://img.amiami.com/images/product/main/251/FIGURE-183911.jpg",
+      full_price: 18500,
+      price: 15380,
+      reward_point: 154,
+      sale_status: "Released",
+      release_date: "2026-02-28T00:00:00",
+      jancode: "4580590209145",
+      maker_name: "Good Smile Company",
+      modeler_name: "hashifu",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H250mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: hashifu
+Paintwork: Bread-Loving Housewife
+Director: Itashi Katahara
+Design/Illustration:ration: Mx2J
+
+"I've received Sensei's kindness. Now it's my turn. Be prepared."
+
+From the popular game "Blue Archive" comes a scale figure of Kikyou, the operations officer of Allied Hyakkiyako Academy's Hyakkaryouran Resolution Council. The figure is a dignified and impressive rendition of Kikyou, known for her composed and cool-headed demeanor. The different textures such as her delicate fingers entwined in the ayatori rope, adorable ears, tail and iconic weapon of choice (Hyakkaryouran Rifle - Keen Wisdom) have been carefully sculpted to the smallest details. The bluish hues of the color scheme also add to Kikyou's intellectual and calm impression. Be sure to add her to your collection.
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "Blue Archive",
+        "Kikyou(Kiryuu Kikyou)"
+      ]
+    },
+    {
+      gcode: "FIGURE-170858-R",
+      scode: "FIGURE-170858-R338",
+      name: "Blue Archive Asuma Toki (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-170858-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-170858-R338",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-170858.jpg",
+      full_price: 19800,
+      price: 10350,
+      reward_point: 104,
+      sale_status: "Released",
+      release_date: "2025-06-30T00:00:00",
+      jancode: "4545784043912",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Toki(Asuma Toki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-170858-R",
+      scode: "FIGURE-170858-R333",
+      name: "Blue Archive Asuma Toki (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-170858-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-170858-R333",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-170858.jpg",
+      full_price: 19800,
+      price: 10350,
+      reward_point: 104,
+      sale_status: "Released",
+      release_date: "2025-06-30T00:00:00",
+      jancode: "4545784043912",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Toki(Asuma Toki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-162356-R",
+      scode: "FIGURE-162356-R065",
+      name: "Nendoroid Blue Archive Ajitani Hifumi",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-162356-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-162356-R065",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-162356.jpg",
+      full_price: 6800,
+      price: 4480,
+      reward_point: 45,
+      sale_status: "Released",
+      release_date: "2024-07-31T00:00:00",
+      jancode: "4580590177185",
+      maker_name: "Good Smile Company",
+      modeler_name: "Usagi",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Usagi
+Cooperation: Nendoron
+Design, Illust: Hwansang
+
+I'll do my best... with you, Sensei!
+From the popular game "Blue Archive" comes a Nendoroid of Hifumi Ajitani, a Trinity General School student belonging to the Supplementary Lessons Department!
+
+Face plates:
+-Troubled face
+-Smiling face
+-Determined face
+
+Optional parts:
+-Assault rifle (My Necessity)
+-Paper bag mask
+-Other optional parts for different poses.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Hifumi(Ajitani Hifumi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-162356-R",
+      scode: "FIGURE-162356-R063",
+      name: "Nendoroid Blue Archive Ajitani Hifumi",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-162356-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-162356-R063",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-162356.jpg",
+      full_price: 6800,
+      price: 4980,
+      reward_point: 50,
+      sale_status: "Released",
+      release_date: "2024-07-31T00:00:00",
+      jancode: "4580590177185",
+      maker_name: "Good Smile Company",
+      modeler_name: "Usagi",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Usagi
+Cooperation: Nendoron
+Design, Illust: Hwansang
+
+I'll do my best... with you, Sensei!
+From the popular game "Blue Archive" comes a Nendoroid of Hifumi Ajitani, a Trinity General School student belonging to the Supplementary Lessons Department!
+
+Face plates:
+-Troubled face
+-Smiling face
+-Determined face
+
+Optional parts:
+-Assault rifle (My Necessity)
+-Paper bag mask
+-Other optional parts for different poses.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Hifumi(Ajitani Hifumi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-160456-R",
+      scode: "FIGURE-160456-R254",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160456-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160456-R254",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg",
+      full_price: 26400,
+      price: 28680,
+      reward_point: 287,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4595122080079",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Design / Illustration: NAMYO
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-160456-R",
+      scode: "FIGURE-160456-R252",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160456-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160456-R252",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg",
+      full_price: 26400,
+      price: 25830,
+      reward_point: 259,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4595122080079",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Design / Illustration: NAMYO
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-160456-R",
+      scode: "FIGURE-160456-R253",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160456-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160456-R253",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg",
+      full_price: 26400,
+      price: 25830,
+      reward_point: 259,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4595122080079",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Design / Illustration: NAMYO
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-160456-R",
+      scode: "FIGURE-160456-R249",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160456-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160456-R249",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg",
+      full_price: 26400,
+      price: 28680,
+      reward_point: 287,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4595122080079",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Design / Illustration: NAMYO
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-160456-R",
+      scode: "FIGURE-160456-R247",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160456-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160456-R247",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg",
+      full_price: 26400,
+      price: 19780,
+      reward_point: 198,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4595122080079",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Design / Illustration: NAMYO
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-174926-R",
+      scode: "FIGURE-174926-R149",
+      name: "Blue Archive Wakamo (Swimsuit) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-174926-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-174926-R149",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-174926.jpg",
+      full_price: 28800,
+      price: 17480,
+      reward_point: 175,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4580416927673",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H270mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-174926-R",
+      scode: "FIGURE-174926-R148",
+      name: "Blue Archive Wakamo (Swimsuit) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-174926-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-174926-R148",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-174926.jpg",
+      full_price: 28800,
+      price: 17480,
+      reward_point: 175,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4580416927673",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H270mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-174926-R",
+      scode: "FIGURE-174926-R144",
+      name: "Blue Archive Wakamo (Swimsuit) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-174926-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-174926-R144",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-174926.jpg",
+      full_price: 28800,
+      price: 17480,
+      reward_point: 175,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4580416927673",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H270mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-174926-R",
+      scode: "FIGURE-174926-R141",
+      name: "Blue Archive Wakamo (Swimsuit) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-174926-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-174926-R141",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-174926.jpg",
+      full_price: 28800,
+      price: 15750,
+      reward_point: 158,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4580416927673",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H270mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163119-R",
+      scode: "FIGURE-163119-R126",
+      name: "Blue Archive Eimi 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163119-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163119-R126",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163119.jpg",
+      full_price: 19800,
+      price: 8880,
+      reward_point: 89,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4580692150246",
+      maker_name: "MIMEYOI",
+      modeler_name: "jarel",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: (Base included for all) : H275mm (To the tip of the halo / To the top of the head 255mm), W137mm (To the tip of the gun), dia.120mm, Base: W120mm, Thickness 11mm
+Material: PVC & ABS, Base: Acrylic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: jarel
+Cooperation: CREAME
+Paintwork: Emi Hoshina
+Desinger/Illustrator: POPQN
+
+*Please be advised that the product may shrink as a result of the manufacturing process.`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A-",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "MIMEYOI ",
+        "Blue Archive",
+        "Eimi(Izumimoto Eimi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163119-R",
+      scode: "FIGURE-163119-R125",
+      name: "Blue Archive Eimi 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163119-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163119-R125",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163119.jpg",
+      full_price: 19800,
+      price: 8880,
+      reward_point: 89,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4580692150246",
+      maker_name: "MIMEYOI",
+      modeler_name: "jarel",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: (Base included for all) : H275mm (To the tip of the halo / To the top of the head 255mm), W137mm (To the tip of the gun), dia.120mm, Base: W120mm, Thickness 11mm
+Material: PVC & ABS, Base: Acrylic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: jarel
+Cooperation: CREAME
+Paintwork: Emi Hoshina
+Desinger/Illustrator: POPQN
+
+*Please be advised that the product may shrink as a result of the manufacturing process.`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A-",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "MIMEYOI ",
+        "Blue Archive",
+        "Eimi(Izumimoto Eimi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163119-R",
+      scode: "FIGURE-163119-R124",
+      name: "Blue Archive Eimi 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163119-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163119-R124",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163119.jpg",
+      full_price: 19800,
+      price: 8880,
+      reward_point: 89,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4580692150246",
+      maker_name: "MIMEYOI",
+      modeler_name: "jarel",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: (Base included for all) : H275mm (To the tip of the halo / To the top of the head 255mm), W137mm (To the tip of the gun), dia.120mm, Base: W120mm, Thickness 11mm
+Material: PVC & ABS, Base: Acrylic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: jarel
+Cooperation: CREAME
+Paintwork: Emi Hoshina
+Desinger/Illustrator: POPQN
+
+*Please be advised that the product may shrink as a result of the manufacturing process.`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A-",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "MIMEYOI ",
+        "Blue Archive",
+        "Eimi(Izumimoto Eimi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163119-R",
+      scode: "FIGURE-163119-R120",
+      name: "Blue Archive Eimi 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163119-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163119-R120",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163119.jpg",
+      full_price: 19800,
+      price: 8880,
+      reward_point: 89,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4580692150246",
+      maker_name: "MIMEYOI",
+      modeler_name: "jarel",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: (Base included for all) : H275mm (To the tip of the halo / To the top of the head 255mm), W137mm (To the tip of the gun), dia.120mm, Base: W120mm, Thickness 11mm
+Material: PVC & ABS, Base: Acrylic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: jarel
+Cooperation: CREAME
+Paintwork: Emi Hoshina
+Desinger/Illustrator: POPQN
+
+*Please be advised that the product may shrink as a result of the manufacturing process.`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A-",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "MIMEYOI ",
+        "Blue Archive",
+        "Eimi(Izumimoto Eimi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158836-R",
+      scode: "FIGURE-158836-R154",
+      name: "POP UP PARADE Blue Archive Yuuka: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158836-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158836-R154",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158836.jpg",
+      full_price: 4800,
+      price: 4280,
+      reward_point: 43,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948203",
+      maker_name: "Good Smile Company",
+      modeler_name: "Chikai",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chikai
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: Hwansang
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Yuuka(Hayase Yuuka)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158836-R",
+      scode: "FIGURE-158836-R153",
+      name: "POP UP PARADE Blue Archive Yuuka: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158836-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158836-R153",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158836.jpg",
+      full_price: 4800,
+      price: 3440,
+      reward_point: 35,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948203",
+      maker_name: "Good Smile Company",
+      modeler_name: "Chikai",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chikai
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: Hwansang
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Yuuka(Hayase Yuuka)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158836-R",
+      scode: "FIGURE-158836-R152",
+      name: "POP UP PARADE Blue Archive Yuuka: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158836-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158836-R152",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158836.jpg",
+      full_price: 4800,
+      price: 3440,
+      reward_point: 35,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948203",
+      maker_name: "Good Smile Company",
+      modeler_name: "Chikai",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chikai
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: Hwansang
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Yuuka(Hayase Yuuka)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158836-R",
+      scode: "FIGURE-158836-R151",
+      name: "POP UP PARADE Blue Archive Yuuka: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158836-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158836-R151",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158836.jpg",
+      full_price: 4800,
+      price: 3870,
+      reward_point: 39,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948203",
+      maker_name: "Good Smile Company",
+      modeler_name: "Chikai",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chikai
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: Hwansang
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Yuuka(Hayase Yuuka)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158837-R",
+      scode: "FIGURE-158837-R122",
+      name: "POP UP PARADE Blue Archive Aris: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158837-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158837-R122",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158837.jpg",
+      full_price: 4800,
+      price: 3980,
+      reward_point: 40,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948210",
+      maker_name: "Good Smile Company",
+      modeler_name: "dogu",
+      description: `Pre-painted Complete Figure
+Size: Approx. H165mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: dogu
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: DoReMi
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!MODEROID Voltron`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Alice (Aris)(Tendou Alice)"
+      ]
+    },
+    {
+      gcode: "FIGURE-158837-R",
+      scode: "FIGURE-158837-R121",
+      name: "POP UP PARADE Blue Archive Aris: Mischievous * Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-158837-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-158837-R121",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-158837.jpg",
+      full_price: 4800,
+      price: 4480,
+      reward_point: 45,
+      sale_status: "Released",
+      release_date: "2024-02-29T00:00:00",
+      jancode: "4580416948210",
+      maker_name: "Good Smile Company",
+      modeler_name: "dogu",
+      description: `Pre-painted Complete Figure
+Size: Approx. H165mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: dogu
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: DoReMi
+Illust: QP:flapper
+
+A New Addition to the POP UP PARADE!
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!MODEROID Voltron`,
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Alice (Aris)(Tendou Alice)"
+      ]
+    },
+    {
+      gcode: "FIGURE-200546-R",
+      scode: "FIGURE-200546-R048",
+      name: 'Blue Archive Yumemirize "Haruka" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200546-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200546-R048",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg",
+      full_price: 0,
+      price: 880,
+      reward_point: 9,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4582733467719",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 13cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Haruka(Haruka Igusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-200546-R",
+      scode: "FIGURE-200546-R047",
+      name: 'Blue Archive Yumemirize "Haruka" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200546-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200546-R047",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg",
+      full_price: 0,
+      price: 880,
+      reward_point: 9,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4582733467719",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 13cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Haruka(Haruka Igusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-200546-R",
+      scode: "FIGURE-200546-R045",
+      name: 'Blue Archive Yumemirize "Haruka" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200546-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200546-R045",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg",
+      full_price: 0,
+      price: 880,
+      reward_point: 9,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4582733467719",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 13cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Haruka(Haruka Igusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-200546-R",
+      scode: "FIGURE-200546-R039",
+      name: 'Blue Archive Yumemirize "Haruka" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200546-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200546-R039",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg",
+      full_price: 0,
+      price: 880,
+      reward_point: 9,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4582733467719",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 13cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Haruka(Haruka Igusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-200546-R",
+      scode: "FIGURE-200546-R031",
+      name: 'Blue Archive Yumemirize "Haruka" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200546-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200546-R031",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg",
+      full_price: 0,
+      price: 880,
+      reward_point: 9,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4582733467719",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 13cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Haruka(Haruka Igusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-179861-R",
+      scode: "FIGURE-179861-R034",
+      name: "Blue Archive Ui (Swimsuit) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-179861-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-179861-R034",
+      image_url: "https://img.amiami.com/images/product/main/244/FIGURE-179861.jpg",
+      full_price: 26800,
+      price: 20980,
+      reward_point: 210,
+      sale_status: "Released",
+      release_date: "2025-10-31T00:00:00",
+      jancode: "4580678969251",
+      maker_name: "Phat Company",
+      modeler_name: "Takatori",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H280mm (including halo)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Takatori
+Cooperation: Ain
+Paintwork: Tori
+Design / Illust: CHILD
+
+From the popular game "Blue Archive" comes a scale figure of Ui, the president of the Trinity General School Library Committee!
+The figure features Ui in a summery black bikini and gray cardigan ensemble,
+
+hunched over anxiously with her hair done more neatly than usual.
+
+The beach-inspired base, along with Ui's book and suitcase add to the atmosphere of the figure, completing the look.
+
+Various optional parts such as a pair of glasses and an awkwardly smiling face plate are also included for a variety of display options!`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Phat Company",
+        "Blue Archive",
+        "Ui(Kozeki Ui)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185102-R",
+      scode: "FIGURE-185102-R074",
+      name: 'Blue Archive "Plana" 1/7 Complete Figure',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185102-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185102-R074",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185102.jpg",
+      full_price: 23650,
+      price: 23980,
+      reward_point: 240,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4595123918388",
+      maker_name: "GOLDENHEAD+",
+      modeler_name: "Mederukin",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H230mm (including base)
+Material: PVC & ABS
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Mederukin
+Paintwork: Ekoshi
+Design / Illust: DoReMi`,
+      copyright: "2025 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Thousand",
+        "GOLDENHEAD+",
+        "Blue Archive",
+        "Plana"
+      ]
+    },
+    {
+      gcode: "FIGURE-160477-R",
+      scode: "FIGURE-160477-R096",
+      name: "Nendoroid Blue Archive Arona",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160477-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160477-R096",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160477.jpg",
+      full_price: 6700,
+      price: 4290,
+      reward_point: 43,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4580590177161",
+      maker_name: "Good Smile Company",
+      modeler_name: "YanYan",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: YanYan
+Cooperation: Nendoron
+Design/Illust: Hwansang
+
+"We finally meet! I've been waiting here for you for a long, long time, Sensei!"
+From the popular game "Blue Archive" comes a Nendoroid of Arona, the girl who exists within the Shittim Chest.
+
+Face plates:
+-Grinning face
+-Smiling face
+-Starry-eyed face
+
+Optional parts:
+-Umbrella
+-Envelope
+-Sketch
+-Other optional parts for different poses.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-160477-R",
+      scode: "FIGURE-160477-R095",
+      name: "Nendoroid Blue Archive Arona",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-160477-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-160477-R095",
+      image_url: "https://img.amiami.com/images/product/main/233/FIGURE-160477.jpg",
+      full_price: 6700,
+      price: 6580,
+      reward_point: 66,
+      sale_status: "Released",
+      release_date: "2024-05-31T00:00:00",
+      jancode: "4580590177161",
+      maker_name: "Good Smile Company",
+      modeler_name: "YanYan",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: YanYan
+Cooperation: Nendoron
+Design/Illust: Hwansang
+
+"We finally meet! I've been waiting here for you for a long, long time, Sensei!"
+From the popular game "Blue Archive" comes a Nendoroid of Arona, the girl who exists within the Shittim Chest.
+
+Face plates:
+-Grinning face
+-Smiling face
+-Starry-eyed face
+
+Optional parts:
+-Umbrella
+-Envelope
+-Sketch
+-Other optional parts for different poses.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146351-R",
+      scode: "FIGURE-146351-R042",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146351-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146351-R042",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146351.jpg",
+      full_price: 23100,
+      price: 15280,
+      reward_point: 153,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918043",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146351-R",
+      scode: "FIGURE-146351-R041",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146351-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146351-R041",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146351.jpg",
+      full_price: 23100,
+      price: 16980,
+      reward_point: 170,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918043",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-200643-R",
+      scode: "FIGURE-200643-R001",
+      name: "Nendoroid Blue Archive Tsukatsuki Rio",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-200643-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-200643-R001",
+      image_url: "https://img.amiami.com/images/product/main/262/FIGURE-200643.jpg",
+      full_price: 6900,
+      price: 5880,
+      reward_point: 59,
+      sale_status: "Released",
+      release_date: "2026-09-30T00:00:00",
+      jancode: "4580828677104",
+      maker_name: "Good Smile Company",
+      modeler_name: "Nendoron",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Nendoron
+Design / Illust: Mx2J
+
+From the popular game "Blue Archive" comes a Nendoroid of Rio, a Millennium Science School student and the president of Seminar!
+
+Face plates:
+-Composed face
+-Smiling face
+-Blushing face
+
+Optional parts:
+-Tablet computer
+-Small AMAS
+-Other optional parts for different poses.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Rio(Tsukatsuki Rio)"
+      ]
+    },
+    {
+      gcode: "FIGURE-197376-R",
+      scode: "FIGURE-197376-R001",
+      name: "figma Blue Archive Rikuhachima Aru",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-197376-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-197376-R001",
+      image_url: "https://img.amiami.com/images/product/main/261/FIGURE-197376.jpg",
+      full_price: 11800,
+      price: 10880,
+      reward_point: 109,
+      sale_status: "Released",
+      release_date: "2026-09-30T00:00:00",
+      jancode: "4545784070239",
+      maker_name: "Max Factory",
+      modeler_name: "Ryo Uchida",
+      description: `Pre-painted Posable Figure
+Size: Approx. H148mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Max Factory (Ryo Uchida)
+Cooperation: Masaki Apsy
+
+"I've been waiting for you. Problem Solver 68 is ready to tackle anything."
+
+From the popular game "Blue Archive" comes a figma of Aru Rikuhachima, Gehenna Academy's self-appointed president of Problem Solver 68!
+
+Face plates:
+-Standard face
+-"What?!" face
+-Closed-eyes smiling face
+-Panicked face
+
+Optional parts:
+-Wine Red Admire
+-Business card
+-Crossed arms parts
+-Other optional parts for different poses.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "figma Series",
+        "figma",
+        "Blue Archive",
+        "Aru(Rikuhachima Aru)"
+      ]
+    },
+    {
+      gcode: "FIGURE-171968-R",
+      scode: "FIGURE-171968-R058",
+      name: "POP UP PARADE Blue Archive Kotori (Cheer Squad) Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-171968-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-171968-R058",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-171968.jpg",
+      full_price: 5500,
+      price: 2160,
+      reward_point: 22,
+      sale_status: "Released",
+      release_date: "2024-12-31T00:00:00",
+      jancode: "4580590197084",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Kotori(Toyomi Kotori)"
+      ]
+    },
+    {
+      gcode: "FIGURE-171968-R",
+      scode: "FIGURE-171968-R056",
+      name: "POP UP PARADE Blue Archive Kotori (Cheer Squad) Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-171968-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-171968-R056",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-171968.jpg",
+      full_price: 5500,
+      price: 2430,
+      reward_point: 25,
+      sale_status: "Released",
+      release_date: "2024-12-31T00:00:00",
+      jancode: "4580590197084",
+      maker_name: "Good Smile Company",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Kotori(Toyomi Kotori)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R020",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R020",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R019",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R019",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R018",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R018",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R017",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R017",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2430,
+      reward_point: 25,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R015",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R015",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2480,
+      reward_point: 25,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "C",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R013",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R013",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2430,
+      reward_point: 25,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R011",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R011",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2430,
+      reward_point: 25,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R010",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R010",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R007",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R007",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188051-R",
+      scode: "FIGURE-188051-R005",
+      name: "POP UP PARADE Blue Archive Tsubaki (Guide)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188051-R005",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg",
+      full_price: 5500,
+      price: 2680,
+      reward_point: 27,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4571697186132",
+      maker_name: "Good Smile Company",
+      modeler_name: "No. 23",
+      description: `Pre-painted Complete Figure
+Size: Approx. H190mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: No. 23
+Paintwork: Hiroto Tanimoto
+Design/Illustration: Mx2J
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Tsubaki(Kasuga Tsubaki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-169686-R",
+      scode: "FIGURE-169686-R101",
+      name: "Nendoroid Blue Archive Rikuhachima Aru",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-169686-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-169686-R101",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-169686.jpg",
+      full_price: 7400,
+      price: 5380,
+      reward_point: 54,
+      sale_status: "Released",
+      release_date: "2024-10-31T00:00:00",
+      jancode: "4545784069448",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Aru(Rikuhachima Aru)"
+      ]
+    },
+    {
+      gcode: "FIGURE-169686-R",
+      scode: "FIGURE-169686-R100",
+      name: "Nendoroid Blue Archive Rikuhachima Aru",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-169686-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-169686-R100",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-169686.jpg",
+      full_price: 7400,
+      price: 5980,
+      reward_point: 60,
+      sale_status: "Released",
+      release_date: "2024-10-31T00:00:00",
+      jancode: "4545784069448",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Aru(Rikuhachima Aru)"
+      ]
+    },
+    {
+      gcode: "FIGURE-179521-R",
+      scode: "FIGURE-179521-R036",
+      name: "figma Blue Archive Sunaookami Shiroko (Cycling) DX Edition",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-179521-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-179521-R036",
+      image_url: "https://img.amiami.com/images/product/main/244/FIGURE-179521.jpg",
+      full_price: 11000,
+      price: 10080,
+      reward_point: 101,
+      sale_status: "Released",
+      release_date: "2025-10-31T00:00:00",
+      jancode: "4545784069776",
+      maker_name: "Max Factory",
+      modeler_name: "Kozuki, Naoki Sato",
+      description: `Pre-painted Posable Figure, DX Edition
+Size: Approx. H145mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base
+Expression part (standard face, smiling face, upward glancing smiling face)
+Optional parts (assault rifle, bag, bottle, road bike, other optional parts for different poses.)`,
+      memo: `Sculptor: Max Factory (Kozuki, Naoki Sato)
+Cooperation: Masaki Apsy
+
+From the popular game "Blue Archive" comes a figma of Shiroko Sunaookami, the second-year Abydos High School student and member of the Foreclosure Task Force, in her Cycling outfit! The DX edition includes Shiroko's road bike.`,
+      copyright: "2025 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "figma Series",
+        "figma",
+        "Blue Archive",
+        "Shiroko(Sunaookami Shiroko)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163835-R",
+      scode: "FIGURE-163835-R081",
+      name: "figma Blue Archive Kyouyama Kazusa",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163835-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163835-R081",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163835.jpg",
+      full_price: 9900,
+      price: 10480,
+      reward_point: 105,
+      sale_status: "Released",
+      release_date: "2024-12-31T00:00:00",
+      jancode: "4545784069233",
+      maker_name: "Max Factory",
+      modeler_name: "Masanori Kuroda",
+      description: `Pre-painted Posable Figure
+Size: Approx. H145mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Max Factory (Masanori Kuroda)
+Cooperation: Masaki Apsy
+Design: mimo
+Illustration: Mx2J`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "figma Series",
+        "figma",
+        "Blue Archive",
+        "Kazusa(Kyouyama Kazusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-163835-R",
+      scode: "FIGURE-163835-R078",
+      name: "figma Blue Archive Kyouyama Kazusa",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-163835-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-163835-R078",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-163835.jpg",
+      full_price: 9900,
+      price: 10480,
+      reward_point: 105,
+      sale_status: "Released",
+      release_date: "2024-12-31T00:00:00",
+      jancode: "4545784069233",
+      maker_name: "Max Factory",
+      modeler_name: "Masanori Kuroda",
+      description: `Pre-painted Posable Figure
+Size: Approx. H145mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Max Factory (Masanori Kuroda)
+Cooperation: Masaki Apsy
+Design: mimo
+Illustration: Mx2J`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "figma Series",
+        "figma",
+        "Blue Archive",
+        "Kazusa(Kyouyama Kazusa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-168589-R",
+      scode: "FIGURE-168589-R068",
+      name: "Nendoroid Blue Archive -Blue Archive- Ushio Noa",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-168589-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-168589-R068",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-168589.jpg",
+      full_price: 6800,
+      price: 5980,
+      reward_point: 60,
+      sale_status: "Released",
+      release_date: "2024-09-30T00:00:00",
+      jancode: "4580590191839",
+      maker_name: "Good Smile Company",
+      modeler_name: "qxy",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: qxy
+Cooperation: Nendoron
+Design: Hwansang
+Illust: DoReMi`,
+      copyright: "NEXON Games Co.，Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Noa(Ushio Noa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-168589-R",
+      scode: "FIGURE-168589-R062",
+      name: "Nendoroid Blue Archive -Blue Archive- Ushio Noa",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-168589-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-168589-R062",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-168589.jpg",
+      full_price: 6800,
+      price: 4780,
+      reward_point: 48,
+      sale_status: "Released",
+      release_date: "2024-09-30T00:00:00",
+      jancode: "4580590191839",
+      maker_name: "Good Smile Company",
+      modeler_name: "qxy",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: qxy
+Cooperation: Nendoron
+Design: Hwansang
+Illust: DoReMi`,
+      copyright: "NEXON Games Co.，Ltd. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Noa(Ushio Noa)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188228-R",
+      scode: "FIGURE-188228-R013",
+      name: "Nendoroid Blue Archive Asuma Toki",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188228-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188228-R013",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188228.jpg",
+      full_price: 7300,
+      price: 7180,
+      reward_point: 72,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4571697186316",
+      maker_name: "Good Smile Company",
+      modeler_name: "Shuhei Yoshida",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Shuhei Yoshida
+Cooperation: Nendoron
+Design, Illust: DoReMi
+
+From the popular game "Blue Archive" comes a Nendoroid of the fifth C&C agent and Millennium Science School student, Toki!
+
+Face plates:
+-Expressionless face
+-Face with Closed Eyes
+-Battle face
+
+Optional parts:
+-Assault Rifle (Secret Time)
+-Attache case
+-Other optional parts for different poses.
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.，Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Toki(Asuma Toki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-188228-R",
+      scode: "FIGURE-188228-R014",
+      name: "Nendoroid Blue Archive Asuma Toki",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-188228-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-188228-R014",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-188228.jpg",
+      full_price: 7300,
+      price: 7980,
+      reward_point: 80,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4571697186316",
+      maker_name: "Good Smile Company",
+      modeler_name: "Shuhei Yoshida",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Shuhei Yoshida
+Cooperation: Nendoron
+Design, Illust: DoReMi
+
+From the popular game "Blue Archive" comes a Nendoroid of the fifth C&C agent and Millennium Science School student, Toki!
+
+Face plates:
+-Expressionless face
+-Face with Closed Eyes
+-Battle face
+
+Optional parts:
+-Assault Rifle (Secret Time)
+-Attache case
+-Other optional parts for different poses.
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.，Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Toki(Asuma Toki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-194518-R",
+      scode: "FIGURE-194518-R005",
+      name: "Nendoroid Blue Archive Arona",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-194518-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-194518-R005",
+      image_url: "https://img.amiami.com/images/product/main/254/FIGURE-194518.jpg",
+      full_price: 6700,
+      price: 6980,
+      reward_point: 70,
+      sale_status: "Released",
+      release_date: "2026-05-31T00:00:00",
+      jancode: "4580828667013",
+      maker_name: "Good Smile Company",
+      modeler_name: "YanYan",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: YanYan
+Cooperation: Nendoron
+
+From the popular game "Blue Archive" comes a Nendoroid of Arona, the girl who exists within the Shittim Chest.
+
+Face plates:
+-Grinning face
+-Smiling face
+-Starry-eyed face
+
+Optional parts:
+-Umbrella
+-Envelope
+-Sketch
+-Other optional parts for different poses.
+
+*The figure cannot stand on its own. Please use the included base.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-192051-R",
+      scode: "",
+      name: "POP UP PARADE Blue Archive Momoi (Maid) Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-192051-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=",
+      image_url: "https://img.amiami.com/images/product/main/253/FIGURE-192051.jpg",
+      full_price: 7200,
+      price: 5980,
+      reward_point: 0,
+      sale_status: "",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4580828662735",
+      maker_name: "",
+      modeler_name: "",
+      description: "",
+      memo: "",
+      copyright: "",
+      item_condition: "",
+      box_condition: "",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: false,
+      is_preowned_sale: false,
+      categories: [],
+      tags: []
+    },
+    {
+      gcode: "FIGURE-192052-R",
+      scode: "FIGURE-192052-R010",
+      name: "POP UP PARADE Blue Archive Midori (Maid) Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-192052-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-192052-R010",
+      image_url: "https://img.amiami.com/images/product/main/253/FIGURE-192052.jpg",
+      full_price: 7200,
+      price: 5380,
+      reward_point: 54,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4580828662742",
+      maker_name: "Good Smile Company",
+      modeler_name: "Magical Girl Haruyuki",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Magical Girl Haruyuki
+Paintwork: Tomofumi (WATANA BOX)
+Design/Illust: kokosando
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Midori(Saiba Midori)"
+      ]
+    },
+    {
+      gcode: "FIGURE-192052-R",
+      scode: "FIGURE-192052-R009",
+      name: "POP UP PARADE Blue Archive Midori (Maid) Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-192052-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-192052-R009",
+      image_url: "https://img.amiami.com/images/product/main/253/FIGURE-192052.jpg",
+      full_price: 7200,
+      price: 5980,
+      reward_point: 60,
+      sale_status: "Released",
+      release_date: "2026-04-30T00:00:00",
+      jancode: "4580828662742",
+      maker_name: "Good Smile Company",
+      modeler_name: "Magical Girl Haruyuki",
+      description: `Pre-painted Complete Figure
+Size: Approx. H170mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Magical Girl Haruyuki
+Paintwork: Tomofumi (WATANA BOX)
+Design/Illust: kokosando
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Midori(Saiba Midori)"
+      ]
+    },
+    {
+      gcode: "FIGURE-182254-R",
+      scode: "FIGURE-182254-R054",
+      name: "POP UP PARADE Blue Archive Nonomi: Mischievous Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-182254-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-182254-R054",
+      image_url: "https://img.amiami.com/images/product/main/251/FIGURE-182254.jpg",
+      full_price: 5500,
+      price: 3280,
+      reward_point: 33,
+      sale_status: "Released",
+      release_date: "2025-08-31T00:00:00",
+      jancode: "4580590207134",
+      maker_name: "Good Smile Company",
+      modeler_name: "YUMA",
+      description: `Pre-painted Complete Figure
+Size: Approx. H175mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: YUMA (SWANBOAT no SOUZA)
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: 9ml
+Illust: QP: flapper
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "NEXON Games Co.， Ltd. ＆Yostar，Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Nonomi(Izayoi Nonomi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-182254-R",
+      scode: "FIGURE-182254-R052",
+      name: "POP UP PARADE Blue Archive Nonomi: Mischievous Straight Ver. Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-182254-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-182254-R052",
+      image_url: "https://img.amiami.com/images/product/main/251/FIGURE-182254.jpg",
+      full_price: 5500,
+      price: 2970,
+      reward_point: 30,
+      sale_status: "Released",
+      release_date: "2025-08-31T00:00:00",
+      jancode: "4580590207134",
+      maker_name: "Good Smile Company",
+      modeler_name: "YUMA",
+      description: `Pre-painted Complete Figure
+Size: Approx. H175mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: YUMA (SWANBOAT no SOUZA)
+Paintwork: Tomofumi (WATANA BOX)
+Character Design: 9ml
+Illust: QP: flapper
+
+POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "NEXON Games Co.， Ltd. ＆Yostar，Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        "POP UP PARADE",
+        "Blue Archive",
+        "Nonomi(Izayoi Nonomi)"
+      ]
+    },
+    {
+      gcode: "FIGURE-173385-R",
+      scode: "FIGURE-173385-R085",
+      name: "Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-173385-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-173385-R085",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg",
+      full_price: 26800,
+      price: 19980,
+      reward_point: 200,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4545784043950",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Akane(Murokasa Akane)"
+      ]
+    },
+    {
+      gcode: "FIGURE-173385-R",
+      scode: "FIGURE-173385-R084",
+      name: "Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-173385-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-173385-R084",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg",
+      full_price: 26800,
+      price: 17980,
+      reward_point: 180,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4545784043950",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Akane(Murokasa Akane)"
+      ]
+    },
+    {
+      gcode: "FIGURE-173385-R",
+      scode: "FIGURE-173385-R083",
+      name: "Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-173385-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-173385-R083",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg",
+      full_price: 26800,
+      price: 17980,
+      reward_point: 180,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4545784043950",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Akane(Murokasa Akane)"
+      ]
+    },
+    {
+      gcode: "FIGURE-173385-R",
+      scode: "FIGURE-173385-R082",
+      name: "Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-173385-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-173385-R082",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg",
+      full_price: 26800,
+      price: 19980,
+      reward_point: 200,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4545784043950",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Akane(Murokasa Akane)"
+      ]
+    },
+    {
+      gcode: "FIGURE-173385-R",
+      scode: "FIGURE-173385-R081",
+      name: "Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-173385-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-173385-R081",
+      image_url: "https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg",
+      full_price: 26800,
+      price: 17980,
+      reward_point: 180,
+      sale_status: "Released",
+      release_date: "2025-09-30T00:00:00",
+      jancode: "4545784043950",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Akane(Murokasa Akane)"
+      ]
+    },
+    {
+      gcode: "FIGURE-196437-R",
+      scode: "FIGURE-196437-R062",
+      name: 'Blue Archive Yumemirize "Serika" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-196437-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-196437-R062",
+      image_url: "https://img.amiami.com/images/product/main/261/FIGURE-196437.jpg",
+      full_price: 0,
+      price: 1080,
+      reward_point: 11,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4582733460918",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 12cm *Bouquet (accessory): Approx. L5 x 3cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Serika(Kuromi Serika)"
+      ]
+    },
+    {
+      gcode: "FIGURE-196437-R",
+      scode: "FIGURE-196437-R056",
+      name: 'Blue Archive Yumemirize "Serika" (Game-prize)',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-196437-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-196437-R056",
+      image_url: "https://img.amiami.com/images/product/main/261/FIGURE-196437.jpg",
+      full_price: 0,
+      price: 1080,
+      reward_point: 11,
+      sale_status: "Released",
+      release_date: "2026-01-31T00:00:00",
+      jancode: "4582733460918",
+      maker_name: "SEGA",
+      modeler_name: "",
+      description: "Size: Approx. L9 x 12cm *Bouquet (accessory): Approx. L5 x 3cm",
+      memo: "",
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "SEGA Interactive",
+        "SEGA Prize!",
+        "Blue Archive",
+        "Serika(Kuromi Serika)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185231-R",
+      scode: "FIGURE-185231-R083",
+      name: "Blue Archive Kakudate Karin (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185231-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185231-R083",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185231.jpg",
+      full_price: 23800,
+      price: 13480,
+      reward_point: 135,
+      sale_status: "Released",
+      release_date: "2026-05-31T00:00:00",
+      jancode: "4545784044131",
+      maker_name: "Max Factory",
+      modeler_name: "Chieri",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chieri (Max Factory)
+Paintwork: Ichiro Ayabe
+Design/Illust: Mx2J
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Karin (Bunny Girl), the C&C agent disguised as a bunny girl for an infiltration mission! The figure features a slightly embarrassed Karin, who is troubled by the stares she is getting due to her outfit. Her distinct and charming physique and hair have been faithfully recreated in figure form. Be sure to add Karin on a mission to your collection!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Karin(Kakudate Karin)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185231-R",
+      scode: "FIGURE-185231-R070",
+      name: "Blue Archive Kakudate Karin (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185231-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185231-R070",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185231.jpg",
+      full_price: 23800,
+      price: 13480,
+      reward_point: 135,
+      sale_status: "Released",
+      release_date: "2026-05-31T00:00:00",
+      jancode: "4545784044131",
+      maker_name: "Max Factory",
+      modeler_name: "Chieri",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chieri (Max Factory)
+Paintwork: Ichiro Ayabe
+Design/Illust: Mx2J
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Karin (Bunny Girl), the C&C agent disguised as a bunny girl for an infiltration mission! The figure features a slightly embarrassed Karin, who is troubled by the stares she is getting due to her outfit. Her distinct and charming physique and hair have been faithfully recreated in figure form. Be sure to add Karin on a mission to your collection!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Karin(Kakudate Karin)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185231-R",
+      scode: "FIGURE-185231-R069",
+      name: "Blue Archive Kakudate Karin (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185231-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185231-R069",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185231.jpg",
+      full_price: 23800,
+      price: 14980,
+      reward_point: 150,
+      sale_status: "Released",
+      release_date: "2026-05-31T00:00:00",
+      jancode: "4545784044131",
+      maker_name: "Max Factory",
+      modeler_name: "Chieri",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H300mm (including base)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Chieri (Max Factory)
+Paintwork: Ichiro Ayabe
+Design/Illust: Mx2J
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Karin (Bunny Girl), the C&C agent disguised as a bunny girl for an infiltration mission! The figure features a slightly embarrassed Karin, who is troubled by the stares she is getting due to her outfit. Her distinct and charming physique and hair have been faithfully recreated in figure form. Be sure to add Karin on a mission to your collection!
+
+*This product does not balance on its own. Please use the included stand.`,
+      copyright: "2026 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Karin(Kakudate Karin)"
+      ]
+    },
+    {
+      gcode: "FIGURE-169329-R",
+      scode: "FIGURE-169329-R097",
+      name: "Blue Archive Ichinose Asuna (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-169329-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-169329-R097",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-169329.jpg",
+      full_price: 24800,
+      price: 18380,
+      reward_point: 184,
+      sale_status: "Released",
+      release_date: "2024-11-30T00:00:00",
+      jancode: "4545784043899",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H290mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "C",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Asuna(Ichinose Asuna)"
+      ]
+    },
+    {
+      gcode: "FIGURE-169329-R",
+      scode: "FIGURE-169329-R096",
+      name: "Blue Archive Ichinose Asuna (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-169329-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-169329-R096",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-169329.jpg",
+      full_price: 24800,
+      price: 18380,
+      reward_point: 184,
+      sale_status: "Released",
+      release_date: "2024-11-30T00:00:00",
+      jancode: "4545784043899",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H290mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "C",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Asuna(Ichinose Asuna)"
+      ]
+    },
+    {
+      gcode: "FIGURE-169329-R",
+      scode: "FIGURE-169329-R095",
+      name: "Blue Archive Ichinose Asuna (Bunny Girl) 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-169329-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-169329-R095",
+      image_url: "https://img.amiami.com/images/product/main/242/FIGURE-169329.jpg",
+      full_price: 24800,
+      price: 19980,
+      reward_point: 200,
+      sale_status: "Released",
+      release_date: "2024-11-30T00:00:00",
+      jancode: "4545784043899",
+      maker_name: "Max Factory",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H290mm
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: "",
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Max Factory",
+        "Blue Archive",
+        "Asuna(Ichinose Asuna)"
+      ]
+    },
+    {
+      gcode: "FIGURE-145037-R",
+      scode: "FIGURE-145037-R024",
+      name: "Blue Archive Asagi Mutsuki Limited Edition 1/7 Complete Figure (PLUM Exclusive)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-145037-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-145037-R024",
+      image_url: "https://img.amiami.com/images/product/main/223/FIGURE-145037.jpg",
+      full_price: 22000,
+      price: 24380,
+      reward_point: 244,
+      sale_status: "Released",
+      release_date: "2022-05-31T00:00:00",
+      jancode: "4582362384562",
+      maker_name: "Plum",
+      modeler_name: "",
+      description: `PVC Pre-painted Complete Figure, Limited Edition
+Scale: 1/7
+Size: Approx. H250mm
+
+[Set Contents]
+Main figure
+Smiling face part`,
+      memo: "",
+      copyright: `2020 NAT GAMES Co.，Ltd.All Rights Reserved.
+(C)2020 Yostar，Inc.All Rights Reserved.`,
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "PM Office A",
+        "Plum",
+        "Blue Archive",
+        "Mutsuki(Asagi Mutsuki)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185927-R",
+      scode: "FIGURE-185927-R098",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185927-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185927-R098",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185927.jpg",
+      full_price: 26400,
+      price: 25830,
+      reward_point: 259,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4595122080130",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+Original Art, Design: NAMYO
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185927-R",
+      scode: "FIGURE-185927-R093",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185927-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185927-R093",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185927.jpg",
+      full_price: 26400,
+      price: 28680,
+      reward_point: 287,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4595122080130",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+Original Art, Design: NAMYO
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A-",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185927-R",
+      scode: "FIGURE-185927-R091",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185927-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185927-R091",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185927.jpg",
+      full_price: 26400,
+      price: 28680,
+      reward_point: 287,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4595122080130",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+Original Art, Design: NAMYO
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-185927-R",
+      scode: "FIGURE-185927-R089",
+      name: "Blue Archive Wakamo 1/7 Complete Figure",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-185927-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-185927-R089",
+      image_url: "https://img.amiami.com/images/product/main/252/FIGURE-185927.jpg",
+      full_price: 26400,
+      price: 25830,
+      reward_point: 259,
+      sale_status: "Released",
+      release_date: "2025-11-30T00:00:00",
+      jancode: "4595122080130",
+      maker_name: "NEONMAX",
+      modeler_name: "Muta",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H25cm (including base)
+Material: PVC & ABS`,
+      memo: `Sculptor: Muta
+Paintwork: Hiiro (scarlet)
+Internal Supervising Director: Kogetsu
+Original Art, Design: NAMYO
+
+From the popular game "Blue Archive" comes a 1/7 scale figure of Wakamo!
+The detailed decorations and gorgeous design have been faithfully reproduced and carefully finished from the tips of her ears to the end of her tail!
+She also comes with a heart-eyed extra face as well as a normal face, both with her mask removed!
+Be sure to add Wakamo to your collection and get ready to embrace her bursting love!`,
+      copyright: "2024 NEXON Games Co.， Ltd. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "NEONMAX",
+        "Blue Archive",
+        "Wakamo(Kosaka Wakamo)"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R306",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R306",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 17580,
+      reward_point: 176,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R305",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R305",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 21980,
+      reward_point: 220,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R304",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R304",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 21980,
+      reward_point: 220,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "A",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R301",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R301",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 17580,
+      reward_point: 176,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R300",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R300",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 16940,
+      reward_point: 170,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-146352-R",
+      scode: "FIGURE-146352-R299",
+      name: 'Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition',
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-146352-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-146352-R299",
+      image_url: "https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg",
+      full_price: 23650,
+      price: 19780,
+      reward_point: 198,
+      sale_status: "Released",
+      release_date: "2023-08-31T00:00:00",
+      jancode: "4595123918050",
+      maker_name: "GOLDENHEAD",
+      modeler_name: "Mederukin, Thousand",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H220mm (including base)
+Material: PVC, ABS
+
+[Set Contents]
+Main figure
+Base
+Smiling ver. face part`,
+      memo: `Sculptor: Mederukin, Thousand
+Paintwork: namoji
+Cooperation: Alice Glint
+Concept design, Illustration: Hwansang
+
+From Yostar's app game "Blue Archive" comes the awaited figure of "Arona", the system administrator of "Shittim Chest".
+Arona is fully recreated in detail which includes an air of translucence, the cute standing pose, the hair with a water-like beauty, the school uniform that is a clear looking blue and fresh looking white, and even the whale charm on the umbrella-shaped gun.`,
+      copyright: "2023 NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "GOLDENHEAD",
+        "Blue Archive",
+        "Arona"
+      ]
+    },
+    {
+      gcode: "FIGURE-161478-R",
+      scode: "FIGURE-161478-R095",
+      name: "Nendoroid Blue Archive Yuuka Hayase",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-161478-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-161478-R095",
+      image_url: "https://img.amiami.com/images/product/main/234/FIGURE-161478.jpg",
+      full_price: 7000,
+      price: 4780,
+      reward_point: 48,
+      sale_status: "Released",
+      release_date: "2024-06-30T00:00:00",
+      jancode: "4580590177178",
+      maker_name: "Good Smile Company",
+      modeler_name: "Canck",
+      description: `Pre-painted Posable Figure
+Size: Approx. H100mm (non-scale)
+Material: Plastic
+
+[Set Contents]
+Main figure
+Base`,
+      memo: `Sculptor: Canck
+Cooperation: Nendoron
+Design/Illust: Hwansang
+
+"Lucky? No, it's just as calculated."
+From the popular game "Blue Archive" comes a Nendoroid of Yuuka Hayase, the treasurer of Seminar, the student council at Millennium Science School!
+
+Face plates:
+Neutral face
+Smug face
+Blushing face
+
+Optional parts:
+Submachine guns
+Scientific calculator
+Other optional parts for different poses.`,
+      copyright: "NEXON Games Co.， Ltd. ＆ Yostar， Inc. All Rights Reserved.",
+      item_condition: "B",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "Good Smile Company",
+        '"Nendoroid" Series',
+        "Nendoroid",
+        "Blue Archive",
+        "Yuuka(Hayase Yuuka)"
+      ]
+    },
+    {
+      gcode: "FIGURE-183462-R",
+      scode: "FIGURE-183462-R019",
+      name: "[Bonus] Blue Archive Mari (P.E. Uniform) Memorial Lobby Ver. 1/7 Complete Figure (PLUM Exclusive)",
+      gcode_url: "https://www.amiami.com/eng/detail/?gcode=FIGURE-183462-R",
+      scode_url: "https://www.amiami.com/eng/detail/?scode=FIGURE-183462-R019",
+      image_url: "https://img.amiami.com/images/product/main/251/FIGURE-183462.jpg",
+      full_price: 25300,
+      price: 17080,
+      reward_point: 171,
+      sale_status: "Released",
+      release_date: "2025-01-31T00:00:00",
+      jancode: "4582362387235",
+      maker_name: "Plum",
+      modeler_name: "",
+      description: `Pre-painted Complete Figure
+Scale: 1/7
+Size: Approx. H180mm
+Material: PVC
+
+[Set Contents]
+Main figure
+[Bonus]
+Smiling part`,
+      memo: "",
+      copyright: "NEXON Games Co.，Ltd. ＆ Yostar，Inc. All Rights Reserved.",
+      item_condition: "B+",
+      box_condition: "B",
+      is_preowned: true,
+      is_preorder: false,
+      is_backorder: false,
+      has_store_bonus: false,
+      is_amiami_limited: false,
+      is_age_limited: false,
+      has_preorder_bonus: false,
+      is_on_sale: true,
+      is_preowned_sale: false,
+      categories: [],
+      tags: [
+        "PM Office A",
+        "Plum",
+        "Blue Archive",
+        "Mari(Iochi Mari)"
+      ]
+    }
+  ]
+};
+
+// js/game.ts
+var MAX_MISSES = 5;
+var CORRECT_RANGE = 20;
+var YEN_TO_USD = 0.0061;
+var score = 0;
+var misses = 0;
+var isGameOver = false;
+var priceCounterEl = document.getElementById("price-counter");
+var priceLineEl = document.getElementById("price-line");
+var SAFE_LINES = [
+  "nendoroid",
+  "chocopuni",
+  "revoltech",
+  "figma",
+  "pop up parade"
+];
+var showAll = new URLSearchParams(window.location.search).get("mode") === "all";
+var seen = new Set;
+var uniqueItems = baAmiData_default.items.filter((item) => {
+  if (seen.has(item.name))
+    return false;
+  seen.add(item.name);
+  return true;
+});
+function buildPool(showEverything) {
+  return showEverything ? uniqueItems : uniqueItems.filter((item) => SAFE_LINES.some((line) => item.name.toLowerCase().includes(line)));
+}
+var itemPool = buildPool(showAll);
+var outputEl = document.getElementById("output");
+var inputEl = document.getElementById("price-input");
+var submitBtn = document.getElementById("submit-btn");
+var nextBtn = document.getElementById("next-btn");
+var allItemsToggle = document.getElementById("all-items-toggle");
+allItemsToggle.checked = showAll;
+var currentItem = null;
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1;i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
+  }
+  return a;
+}
+var deck = [];
+var deckIndex = 0;
+function getNextItem() {
+  if (itemPool.length === 0)
+    return null;
+  if (deckIndex >= deck.length) {
+    deck = shuffleArray(itemPool);
+    deckIndex = 0;
+  }
+  const item = deck[deckIndex] ?? null;
+  deckIndex += 1;
+  return item;
+}
+function showItem(item, nameId, imageId) {
+  const nameEl = document.getElementById(nameId);
+  if (nameEl) {
+    nameEl.textContent = item.name;
+  }
+  const imgEl = document.getElementById(imageId);
+  if (imgEl instanceof HTMLImageElement) {
+    imgEl.classList.add("loading");
+    setTimeout(() => {
+      imgEl.onload = () => imgEl.classList.remove("loading");
+      imgEl.src = item.image_url;
+      imgEl.alt = item.name;
+    }, 250);
+  }
+}
+function newRound() {
+  document.querySelector(".container")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  nextBtn.hidden = true;
+  inputEl.disabled = false;
+  submitBtn.disabled = false;
+  outputEl.hidden = true;
+  priceLineEl.hidden = true;
+  outputEl.classList.remove("correct", "wrong");
+  inputEl.value = "";
+  currentItem = getNextItem();
+  if (!currentItem)
+    return;
+  showItem(currentItem, "item-name-a", "item-image-a");
+  const upcoming = deck[deckIndex];
+  if (upcoming)
+    new Image().src = upcoming.image_url;
+  priceLineEl.classList.remove("landed");
+}
+function submitRound() {
+  if (!currentItem)
+    return;
+  const guess = Number(inputEl.value);
+  if (inputEl.value === "" || Number.isNaN(guess) || guess <= 0) {
+    outputEl.textContent = "Invalid input! Try again.";
+    outputEl.hidden = false;
+    return;
+  }
+  const realPrice = currentItem.price * YEN_TO_USD;
+  const percentOff = Math.abs(guess - realPrice) / realPrice * 100;
+  if (percentOff <= CORRECT_RANGE) {
+    score += 1;
+    outputEl.classList.add("correct");
+  } else {
+    misses += 1;
+    outputEl.classList.add("wrong");
+  }
+  submitBtn.disabled = true;
+  nextBtn.hidden = false;
+  inputEl.disabled = true;
+  if (misses >= MAX_MISSES) {
+    gameOver();
+    return;
+  }
+  outputEl.textContent = `You were ${percentOff.toFixed(0)}% off!`;
+  outputEl.hidden = false;
+  priceLineEl.hidden = false;
+  animateNumber(priceCounterEl, realPrice, 800, () => {
+    priceLineEl.classList.add("landed");
+  });
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+  });
+}
+function animateNumber(el, target, duration = 800, onDone) {
+  const start = performance.now();
+  function frame(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = (target * eased).toFixed(2);
+    if (progress < 1) {
+      requestAnimationFrame(frame);
+    } else {
+      onDone?.();
+    }
+  }
+  requestAnimationFrame(frame);
+}
+function gameOver() {
+  isGameOver = true;
+  outputEl.textContent = `You Lost! You got a score of ${score}!`;
+  outputEl.hidden = false;
+  nextBtn.textContent = "Play Again";
+}
+function resetGame() {
+  score = 0;
+  misses = 0;
+  isGameOver = false;
+  deckIndex = deck.length;
+  nextBtn.textContent = "Next";
+  newRound();
+}
+submitBtn.addEventListener("click", submitRound);
+nextBtn.addEventListener("click", () => {
+  if (isGameOver) {
+    resetGame();
+  } else {
+    newRound();
+  }
+});
+allItemsToggle.addEventListener("change", () => {
+  itemPool = buildPool(allItemsToggle.checked);
+  resetGame();
+});
+newRound();

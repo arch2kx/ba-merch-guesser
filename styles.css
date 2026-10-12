@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #151515;
+  --color-surface: #1f1f1f;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-primary: #d35e2f;
+  --color-primary-hover: #c53e1d;
+  --color-secondary: #323232;
+  --color-secondary-hover: #3f3f3f;
+  --color-correct: #4cd833;
+  --color-wrong: #d83b2f;
+  --color-border: #3d3d3d;
+}
+
+.header {
+  font-family: "Public Sans", sans-serif;
+  font-size: 2.5rem;
+}
+
+.logo {
+  width: 90%;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Public Sans", sans-serif;
+}
+
+.container {
+  background: var(--color-surface);
+  width: min(800px, 100% - 2rem);
+  text-align: center;
+  margin: 30px auto 0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background: var(--color-primary);
+}
+
+button:hover {
+  background: var(--color-primary-hover);
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  gap: 1rem;
+  justify-items: center;
+}
+.grid-b {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+#item-name-a {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.item-image {
+  width: 100%;
+  max-width: 25rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  transition: opacity 0.25s ease;
+}
+
+.item-image.loading {
+  opacity: 0;
+}
+
+.type-in-input {
+  flex: 1;
+  min-width: 0;
+  font-family: "Public Sans", sans-serif;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.type-in-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.submit-answer-btn {
+  font-family: "Public Sans", sans-serif;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.submit-answer-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.next-btn {
+  font-family: "Public Sans", sans-serif;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.next-btn:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.correct {
+  color: var(--color-correct);
+}
+
+.wrong {
+  color: var(--color-wrong);
+}
+
+#price-line p {
+  margin: 0;
+}
+
+#price-line .price-label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.price-label {
+  font-size: 1.5rem;
+}
+
+.price-value {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.1;
+  transition: color 0.1s ease;
+}
+
+.landed .price-value {
+  color: var(--color-primary);
+}
+
+#output {
+  font-size: 1.2rem;
+}
+
+/* Smaller Screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 1.75rem;
+  }
+
+  #item-name-a {
+    font-size: 1.25rem;
+  }
+
+  .price-value {
+    font-size: 3.5rem;
+  }
+
+  .submit-answer-btn {
+    padding: 15px 20px;
+  }
+}
+
+/* Footer Content */
+.site-footer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.footer-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+.settings summary {
+  cursor: pointer;
+}
+
+.footer-legal {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  max-width: 500px;
+  margin: 0.5rem auto 0;
+  line-height: 1.4;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.invisible {
+  visibility: hidden;
+}

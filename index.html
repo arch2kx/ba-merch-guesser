@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue Archive Merch Guesser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Favicon stuff -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <img
+          class="logo"
+          src="images/logoScreen.png"
+          alt="Blue Archive AmiAmi Price Guesser"
+        />
+        <h1 class="header">Guess the Price! (amiami)</h1>
+      </div>
+      <div class="layout">
+        <div class="grid-a">
+          <img class="item-image" id="item-image-a" />
+          <p id="item-name-a"></p>
+          <div class="type-in-group">
+            <input
+              type="number"
+              class="type-in-input"
+              placeholder="Enter price (USD)"
+              id="price-input"
+            />
+            <button class="submit-answer-btn" id="submit-btn">Submit</button>
+          </div>
+          <div id="price-line" hidden>
+            <p class="price-label">Real Price:</p>
+            <p class="price-value">$<span id="price-counter">0.00</span></p>
+          </div>
+          <p id="output" hidden></p>
+          <button class="next-btn" id="next-btn" hidden>Next</button>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <details class="settings">
+        <summary>Settings</summary>
+        <label class="mode-toggle">
+          <input type="checkbox" id="all-items-toggle" />
+          Show all items
+        </label>
+      </details>
+
+      <nav class="footer-links">
+        <a href="https://ko-fi.com/archkun" target="_blank" rel="noopener"
+          >Ko-fi</a
+        >
+        <a href="https://github.com/arch2kx" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://github.com/arch2kx/ba-plushies-prices"
+          target="_blank"
+          rel="noopener"
+          >Source</a
+        >
+        <a
+          href="https://www.youtube.com/@YourLocalIzuna"
+          target="_blank"
+          rel="noopener"
+          >YouTube</a
+        >
+      </nav>
+
+      <p class="footer-note">
+        Made by Arch Kun. Licensed under MIT. Prices and images from AmiAmi.
+      </p>
+      <p class="footer-legal">
+        Blue Archive is developed by NEXON Games and published by Nexon and
+        Yostar. This is an unofficial fan project and is not affiliated with or
+        endorsed by NEXON Games, Nexon, or Yostar.
+      </p>
+    </footer>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>
