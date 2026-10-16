@@ -1,44 +1,22 @@
-import baAmiInfo from "./baAmiData.json";
+import {
+  errorMessage,
+  fetchLeaderboard,
+  leaderboardEnabled,
+  startGame,
+  type Game,
+  type Item,
+} from "./api";
+import { NAME_MAX, cleanName, type Mode } from "./shared";
 
-// Init rounds
-const MAX_MISSES = 5;
-const CORRECT_RANGE = 20;
-const YEN_TO_USD = 0.0061;
-
-let score = 0;
-let misses = 0;
 let isGameOver = false;
+let busy = false;
+let game: Game | null = null;
+let currentItem: Item | null = null;
+let pendingItem: Item | null = null;
+let gameToken = 0;
 
 const priceCounterEl = document.getElementById("price-counter") as HTMLElement;
 const priceLineEl = document.getElementById("price-line") as HTMLElement;
-
-const SAFE_LINES = [
-  "nendoroid",
-  "chocopuni",
-  "revoltech",
-  "figma",
-  "pop up parade",
-];
-const showAll =
-  new URLSearchParams(window.location.search).get("mode") === "all";
-
-const seen = new Set<string>();
-const uniqueItems = baAmiInfo.items.filter((item) => {
-  if (seen.has(item.name)) return false;
-  seen.add(item.name);
-  return true;
-});
-
-function buildPool(showEverything: boolean) {
-  return showEverything
-    ? uniqueItems
-    : uniqueItems.filter((item) =>
-        SAFE_LINES.some((line) => item.name.toLowerCase().includes(line)),
-      );
-}
-
-let itemPool = buildPool(showAll);
-
 const outputEl = document.getElementById("output") as HTMLElement;
 const inputEl = document.getElementById("price-input") as HTMLInputElement;
 const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
@@ -46,44 +24,39 @@ const nextBtn = document.getElementById("next-btn") as HTMLButtonElement;
 const allItemsToggle = document.getElementById(
   "all-items-toggle",
 ) as HTMLInputElement;
-allItemsToggle.checked = showAll;
+const scoreForm = document.getElementById("score-form") as HTMLFormElement;
+const scoreFormGroup = document.getElementById(
+  "score-form-group",
+) as HTMLElement;
+const nameInput = document.getElementById("name-input") as HTMLInputElement;
+const saveScoreBtn = document.getElementById(
+  "save-score-btn",
+) as HTMLButtonElement;
+const scoreStatusEl = document.getElementById(
+  "score-form-status",
+) as HTMLElement;
+const leaderboardEl = document.getElementById("leaderboard") as HTMLElement;
+const leaderboardBody = document.getElementById(
+  "leaderboard-body",
+) as HTMLElement;
+const leaderboardStatus = document.getElementById(
+  "leaderboard-status",
+) as HTMLElement;
+const leaderboardTabs = Array.from(
+  document.querySelectorAll<HTMLButtonElement>(".leaderboard-tab"),
+);
 
-interface Student {
-  name: string;
-  image_url: string;
-  price: number;
-}
+let mode: Mode =
+  new URLSearchParams(window.location.search).get("mode") === "all"
+    ? "all"
+    : "safe";
+allItemsToggle.checked = mode === "all";
 
-let currentItem: Student | null = null;
+let leaderboardMode: Mode = mode;
+let leaderboardToken = 0;
+let highlightId: number | null = null;
 
-function shuffleArray<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = a[i] as T;
-    a[i] = a[j] as T;
-    a[j] = temp;
-  }
-  return a;
-}
-
-let deck: Student[] = [];
-let deckIndex = 0;
-
-function getNextItem(): Student | null {
-  if (itemPool.length === 0) return null;
-
-  if (deckIndex >= deck.length) {
-    deck = shuffleArray(itemPool);
-    deckIndex = 0;
-  }
-
-  const item = deck[deckIndex] ?? null;
-  deckIndex += 1;
-  return item;
-}
-
-function showItem(item: Student, nameId: string, imageId: string) {
+function showItem(item: Item, nameId: string, imageId: string) {
   const nameEl = document.getElementById(nameId);
   if (nameEl) {
     nameEl.textContent = item.name;
@@ -100,71 +73,80 @@ function showItem(item: Student, nameId: string, imageId: string) {
   }
 }
 
-function newRound() {
-  document
-    .querySelector(".container")
-    ?.scrollIntoView({ behavior: "smooth", block: "start" });
-
+function resetRoundUi() {
   nextBtn.hidden = true;
-  inputEl.disabled = false;
-  submitBtn.disabled = false;
   outputEl.hidden = true;
   priceLineEl.hidden = true;
+  priceLineEl.classList.remove("landed");
   outputEl.classList.remove("correct", "wrong");
   inputEl.value = "";
+}
 
-  currentItem = getNextItem();
+function newRound() {
+  resetRoundUi();
+  inputEl.disabled = false;
+  submitBtn.disabled = false;
+
+  currentItem = pendingItem;
+  pendingItem = null;
   if (!currentItem) return;
   showItem(currentItem, "item-name-a", "item-image-a");
 
-  const upcoming = deck[deckIndex];
-  if (upcoming) new Image().src = upcoming.image_url;
-
-  priceLineEl.classList.remove("landed");
+  inputEl.focus({ preventScroll: true });
+  inputEl.scrollIntoView({ behavior: "smooth", block: "end" });
 }
 
-function submitRound() {
-  if (!currentItem) return;
+async function submitRound() {
+  if (!game || !currentItem || busy || isGameOver) return;
 
   const guess = Number(inputEl.value);
 
-  if (inputEl.value === "" || Number.isNaN(guess) || guess <= 0) {
+  if (inputEl.value === "" || !Number.isFinite(guess) || guess <= 0) {
     outputEl.textContent = "Invalid input! Try again.";
     outputEl.hidden = false;
     return;
   }
 
-  const realPrice = currentItem.price * YEN_TO_USD;
-  const percentOff = (Math.abs(guess - realPrice) / realPrice) * 100;
-
-  if (percentOff <= CORRECT_RANGE) {
-    score += 1;
-    outputEl.classList.add("correct");
-  } else {
-    misses += 1;
-    outputEl.classList.add("wrong");
-  }
-
+  const token = gameToken;
+  busy = true;
   submitBtn.disabled = true;
-  nextBtn.hidden = false;
   inputEl.disabled = true;
 
-  if (misses >= MAX_MISSES) {
-    gameOver();
+  let result;
+  try {
+    result = await game.guess(guess);
+  } catch (err) {
+    if (token !== gameToken) return;
+    busy = false;
+    submitBtn.disabled = false;
+    inputEl.disabled = false;
+    outputEl.textContent = errorMessage(err);
+    outputEl.hidden = false;
+    return;
+  }
+  if (token !== gameToken) return;
+  busy = false;
+
+  pendingItem = result.nextItem;
+  if (pendingItem) new Image().src = pendingItem.image_url;
+
+  outputEl.classList.add(result.correct ? "correct" : "wrong");
+  nextBtn.hidden = false;
+  nextBtn.focus({ preventScroll: true });
+
+  if (result.gameOver) {
+    gameOver(result.score);
     return;
   }
 
-  outputEl.textContent = `You were ${percentOff.toFixed(0)}% off!`;
+  outputEl.textContent = `You were ${result.percentOff.toFixed(0)}% off!`;
   outputEl.hidden = false;
   priceLineEl.hidden = false;
-  animateNumber(priceCounterEl, realPrice, 800, () => {
+  animateNumber(priceCounterEl, result.realPrice, 800, () => {
     priceLineEl.classList.add("landed");
   });
 
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
+  nextBtn.scrollIntoView({ behavior: "smooth", block: "end" });
 }
 
 function animateNumber(
@@ -189,34 +171,192 @@ function animateNumber(
 
   requestAnimationFrame(frame);
 }
-function gameOver() {
+
+function gameOver(score: number) {
   isGameOver = true;
   outputEl.textContent = `You Lost! You got a score of ${score}!`;
   outputEl.hidden = false;
   nextBtn.textContent = "Play Again";
+
+  if (game?.online && score > 0) {
+    scoreForm.hidden = false;
+    scoreFormGroup.hidden = false;
+    nameInput.disabled = false;
+    saveScoreBtn.disabled = false;
+    scoreStatusEl.hidden = true;
+    scoreStatusEl.classList.remove("wrong");
+    nameInput.focus({ preventScroll: true });
+  }
 }
 
-function resetGame() {
-  score = 0;
-  misses = 0;
+function hideScoreForm() {
+  scoreForm.hidden = true;
+  scoreStatusEl.hidden = true;
+  scoreStatusEl.textContent = "";
+}
+
+async function startNewGame() {
+  const token = ++gameToken;
+  busy = false;
   isGameOver = false;
-  deckIndex = deck.length;
+  game = null;
+  currentItem = null;
+  pendingItem = null;
   nextBtn.textContent = "Next";
+  hideScoreForm();
+  resetRoundUi();
+  inputEl.disabled = true;
+  submitBtn.disabled = true;
+
+  let started: Game;
+  try {
+    started = await startGame(mode);
+  } catch (err) {
+    if (token !== gameToken) return;
+    outputEl.textContent = `Couldn't load items. ${errorMessage(err)}`;
+    outputEl.hidden = false;
+    nextBtn.textContent = "Retry";
+    nextBtn.hidden = false;
+    isGameOver = true;
+    return;
+  }
+  if (token !== gameToken) return;
+
+  game = started;
+  pendingItem = started.firstItem;
   newRound();
+
+  if (leaderboardEnabled && !started.online) {
+    outputEl.textContent =
+      "Leaderboard server unavailable. Playing offline; scores won't be saved.";
+    outputEl.hidden = false;
+  }
 }
 
-submitBtn.addEventListener("click", submitRound);
+async function saveScore(event: SubmitEvent) {
+  event.preventDefault();
+  if (!game || !isGameOver || saveScoreBtn.disabled) return;
+
+  const name = cleanName(nameInput.value);
+  const length = Array.from(name).length;
+  if (length < 1 || length > NAME_MAX) {
+    scoreStatusEl.textContent = `Name must be 1–${NAME_MAX} characters.`;
+    scoreStatusEl.classList.add("wrong");
+    scoreStatusEl.hidden = false;
+    return;
+  }
+
+  const token = gameToken;
+  const savedMode = mode;
+  nameInput.disabled = true;
+  saveScoreBtn.disabled = true;
+  scoreStatusEl.hidden = true;
+
+  try {
+    const result = await game.submitScore(name);
+    if (token !== gameToken) return;
+    highlightId = result.id;
+    scoreFormGroup.hidden = true;
+    scoreStatusEl.classList.remove("wrong");
+    scoreStatusEl.textContent = `Saved! You're #${result.rank} on the leaderboard.`;
+    scoreStatusEl.hidden = false;
+    setLeaderboardMode(savedMode);
+  } catch (err) {
+    if (token !== gameToken) return;
+    nameInput.disabled = false;
+    saveScoreBtn.disabled = false;
+    scoreStatusEl.textContent = errorMessage(err);
+    scoreStatusEl.classList.add("wrong");
+    scoreStatusEl.hidden = false;
+  }
+}
+
+function setLeaderboardMode(next: Mode) {
+  leaderboardMode = next;
+  for (const tab of leaderboardTabs) {
+    const selected = tab.dataset.mode === next;
+    tab.setAttribute("aria-selected", String(selected));
+    tab.classList.toggle("active", selected);
+  }
+  void loadLeaderboard();
+}
+
+async function loadLeaderboard() {
+  if (!leaderboardEnabled) return;
+  const token = ++leaderboardToken;
+  const requested = leaderboardMode;
+  leaderboardStatus.textContent = "Loading…";
+  leaderboardStatus.hidden = false;
+
+  try {
+    const entries = await fetchLeaderboard(requested);
+    if (token !== leaderboardToken) return;
+
+    leaderboardBody.replaceChildren(
+      ...entries.map((entry, index) => {
+        const row = document.createElement("tr");
+        if (entry.id === highlightId) row.classList.add("you");
+        const date = new Date(entry.created_at).toLocaleDateString();
+        for (const [text, cls] of [
+          [`${index + 1}`, "lb-rank"],
+          [entry.name, "lb-name"],
+          [`${entry.score}`, "lb-score"],
+          [date, "lb-date"],
+        ] as const) {
+          const cell = document.createElement("td");
+          cell.className = cls;
+          cell.textContent = text;
+          row.append(cell);
+        }
+        return row;
+      }),
+    );
+
+    if (entries.length === 0) {
+      leaderboardStatus.textContent = "No scores yet. Be the first!";
+    } else {
+      leaderboardStatus.hidden = true;
+    }
+  } catch {
+    if (token !== leaderboardToken) return;
+    leaderboardBody.replaceChildren();
+    leaderboardStatus.textContent = "Couldn't load the leaderboard.";
+  }
+}
+
+submitBtn.addEventListener("click", () => void submitRound());
+inputEl.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    void submitRound();
+  }
+});
 nextBtn.addEventListener("click", () => {
   if (isGameOver) {
-    resetGame();
+    void startNewGame();
   } else {
     newRound();
   }
 });
+scoreForm.addEventListener("submit", (event) => void saveScore(event));
 
 allItemsToggle.addEventListener("change", () => {
-  itemPool = buildPool(allItemsToggle.checked);
-  resetGame();
+  mode = allItemsToggle.checked ? "all" : "safe";
+  void startNewGame();
+  setLeaderboardMode(mode);
 });
 
-newRound();
+for (const tab of leaderboardTabs) {
+  tab.addEventListener("click", () => {
+    if (tab.dataset.mode === "safe" || tab.dataset.mode === "all") {
+      setLeaderboardMode(tab.dataset.mode);
+    }
+  });
+}
+
+if (leaderboardEnabled) {
+  leaderboardEl.hidden = false;
+  setLeaderboardMode(leaderboardMode);
+}
+
+void startNewGame();

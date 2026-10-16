@@ -1,0 +1,42 @@
+begin;
+update public.items set active = false;
+insert into public.items (name, image_url, price_usd, safe, active) values
+  ('Blue Archive Kikyou 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/251/FIGURE-183911.jpg', 15380 * 0.0061, false, true),
+  ('Blue Archive Asuma Toki (Bunny Girl) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/242/FIGURE-170858.jpg', 10350 * 0.0061, false, true),
+  ('Nendoroid Blue Archive Ajitani Hifumi', 'https://img.amiami.com/images/product/main/234/FIGURE-162356.jpg', 4480 * 0.0061, true, true),
+  ('Blue Archive Wakamo 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/233/FIGURE-160456.jpg', 28680 * 0.0061, false, true),
+  ('Blue Archive Wakamo (Swimsuit) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/243/FIGURE-174926.jpg', 17480 * 0.0061, false, true),
+  ('Blue Archive Eimi 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/234/FIGURE-163119.jpg', 8880 * 0.0061, false, true),
+  ('POP UP PARADE Blue Archive Yuuka: Mischievous * Straight Ver. Complete Figure', 'https://img.amiami.com/images/product/main/233/FIGURE-158836.jpg', 4280 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Aris: Mischievous * Straight Ver. Complete Figure', 'https://img.amiami.com/images/product/main/233/FIGURE-158837.jpg', 3980 * 0.0061, true, true),
+  ('Blue Archive Yumemirize "Haruka" (Game-prize)', 'https://img.amiami.com/images/product/main/262/FIGURE-200546.jpg', 880 * 0.0061, false, true),
+  ('Blue Archive Ui (Swimsuit) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/244/FIGURE-179861.jpg', 20980 * 0.0061, false, true),
+  ('Blue Archive "Plana" 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/252/FIGURE-185102.jpg', 23980 * 0.0061, false, true),
+  ('Nendoroid Blue Archive Arona', 'https://img.amiami.com/images/product/main/233/FIGURE-160477.jpg', 4290 * 0.0061, true, true),
+  ('Blue Archive "Arona" 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/224/FIGURE-146351.jpg', 15280 * 0.0061, false, true),
+  ('Nendoroid Blue Archive Tsukatsuki Rio', 'https://img.amiami.com/images/product/main/262/FIGURE-200643.jpg', 5880 * 0.0061, true, true),
+  ('figma Blue Archive Rikuhachima Aru', 'https://img.amiami.com/images/product/main/261/FIGURE-197376.jpg', 10880 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Kotori (Cheer Squad) Complete Figure', 'https://img.amiami.com/images/product/main/242/FIGURE-171968.jpg', 2160 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Tsubaki (Guide)', 'https://img.amiami.com/images/product/main/252/FIGURE-188051.jpg', 2680 * 0.0061, true, true),
+  ('Nendoroid Blue Archive Rikuhachima Aru', 'https://img.amiami.com/images/product/main/242/FIGURE-169686.jpg', 5380 * 0.0061, true, true),
+  ('figma Blue Archive Sunaookami Shiroko (Cycling) DX Edition', 'https://img.amiami.com/images/product/main/244/FIGURE-179521.jpg', 10080 * 0.0061, true, true),
+  ('figma Blue Archive Kyouyama Kazusa', 'https://img.amiami.com/images/product/main/234/FIGURE-163835.jpg', 10480 * 0.0061, true, true),
+  ('Nendoroid Blue Archive -Blue Archive- Ushio Noa', 'https://img.amiami.com/images/product/main/242/FIGURE-168589.jpg', 5980 * 0.0061, true, true),
+  ('Nendoroid Blue Archive Asuma Toki', 'https://img.amiami.com/images/product/main/252/FIGURE-188228.jpg', 7180 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Momoi (Maid) Complete Figure', 'https://img.amiami.com/images/product/main/253/FIGURE-192051.jpg', 5980 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Midori (Maid) Complete Figure', 'https://img.amiami.com/images/product/main/253/FIGURE-192052.jpg', 5380 * 0.0061, true, true),
+  ('POP UP PARADE Blue Archive Nonomi: Mischievous Straight Ver. Complete Figure', 'https://img.amiami.com/images/product/main/251/FIGURE-182254.jpg', 3280 * 0.0061, true, true),
+  ('Blue Archive Murokasa Akane (Bunny Girl) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/243/FIGURE-173385.jpg', 19980 * 0.0061, false, true),
+  ('Blue Archive Yumemirize "Serika" (Game-prize)', 'https://img.amiami.com/images/product/main/261/FIGURE-196437.jpg', 1080 * 0.0061, false, true),
+  ('Blue Archive Kakudate Karin (Bunny Girl) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/252/FIGURE-185231.jpg', 13480 * 0.0061, false, true),
+  ('Blue Archive Ichinose Asuna (Bunny Girl) 1/7 Complete Figure', 'https://img.amiami.com/images/product/main/242/FIGURE-169329.jpg', 18380 * 0.0061, false, true),
+  ('Blue Archive Asagi Mutsuki Limited Edition 1/7 Complete Figure (PLUM Exclusive)', 'https://img.amiami.com/images/product/main/223/FIGURE-145037.jpg', 24380 * 0.0061, false, true),
+  ('Blue Archive "Arona" 1/7 Complete Figure AmiAmi Limited Edition', 'https://img.amiami.com/images/product/main/224/FIGURE-146352.jpg', 17580 * 0.0061, false, true),
+  ('Nendoroid Blue Archive Yuuka Hayase', 'https://img.amiami.com/images/product/main/234/FIGURE-161478.jpg', 4780 * 0.0061, true, true),
+  ('[Bonus] Blue Archive Mari (P.E. Uniform) Memorial Lobby Ver. 1/7 Complete Figure (PLUM Exclusive)', 'https://img.amiami.com/images/product/main/251/FIGURE-183462.jpg', 17080 * 0.0061, false, true)
+on conflict (name) do update set
+  image_url = excluded.image_url,
+  price_usd = excluded.price_usd,
+  safe = excluded.safe,
+  active = true;
+commit;

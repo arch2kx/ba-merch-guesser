@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "",
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
     "@types/bun": "^1.4.2"
   },
   "peerDependencies": {
@@ -13,6 +14,9 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bun build js/game.ts --outfile js/game.js",
+    "seed": "bun scripts/gen-seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
   }
 }

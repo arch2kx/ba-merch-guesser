@@ -10,6 +10,7 @@ see the real price and how close you were. Five misses and the game ends.
 - Prices converted from JPY to USD
 - Guesses within 20% of the real price count as correct
 - No repeated items until you've seen them all
+- Global leaderboard (separate boards for standard and all-items modes)
 
 ## How to Play
 
@@ -25,8 +26,37 @@ Requires [Bun](https://bun.sh).
     bun install
     bun build js/game.ts --outfile js/game.js
 
-Then open `index.html` in a browser, or serve the folder with any static
-server.
+Then serve the folder with any static server (e.g. `bunx serve .`).
+
+Without leaderboard config the game runs fully in the browser and the
+leaderboard is hidden.
+
+## Leaderboard Setup
+
+The leaderboard runs on [Supabase](https://supabase.com). The server runs
+the game: it picks items, grades guesses and keeps score, so the browser
+never sends a score it could fake. Tables are locked down, and the browser
+can only call four functions: `start_game`, `submit_guess`, `submit_score`
+and `get_leaderboard`.
+
+1. Create a Supabase project.
+2. In the SQL editor, run `supabase/migrations/20261016000000_leaderboard.sql`,
+   then `supabase/seed.sql`.
+3. Put the project URL and anon/publishable key in `js/config.ts`.
+4. Rebuild: `bun run build`.
+
+When `js/baAmiData.json` changes, run `bun run seed` and run the new
+`supabase/seed.sql` again.
+
+If the server can't be reached, the game falls back to offline play and
+scores aren't saved.
+
+## Tests
+
+    bun test
+
+Runs the database migration against an in-memory Postgres (PGlite) and
+checks gameplay, scoring and access rules.
 
 ## Notes
 

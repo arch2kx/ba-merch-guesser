@@ -63,10 +63,72 @@
             <p class="price-value">$<span id="price-counter">0.00</span></p>
           </div>
           <p id="output" hidden></p>
+          <form id="score-form" class="score-form" hidden>
+            <div id="score-form-group">
+              <label for="name-input" class="score-form-label"
+                >Save your score to the leaderboard</label
+              >
+              <div class="type-in-group">
+                <input
+                  type="text"
+                  class="type-in-input"
+                  id="name-input"
+                  placeholder="Your name"
+                  maxlength="20"
+                  autocomplete="nickname"
+                  required
+                />
+                <button type="submit" class="submit-answer-btn" id="save-score-btn">
+                  Save
+                </button>
+              </div>
+            </div>
+            <p id="score-form-status" class="score-form-status" hidden></p>
+          </form>
           <button class="next-btn" id="next-btn" hidden>Next</button>
         </div>
       </div>
     </div>
+    <section
+      class="container leaderboard"
+      id="leaderboard"
+      aria-labelledby="leaderboard-title"
+      hidden
+    >
+      <h2 class="leaderboard-title" id="leaderboard-title">Leaderboard</h2>
+      <div class="leaderboard-tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="leaderboard-tab active"
+          data-mode="safe"
+          aria-selected="true"
+        >
+          Standard
+        </button>
+        <button
+          type="button"
+          role="tab"
+          class="leaderboard-tab"
+          data-mode="all"
+          aria-selected="false"
+        >
+          All Items
+        </button>
+      </div>
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th class="lb-rank" scope="col">#</th>
+            <th class="lb-name" scope="col">Name</th>
+            <th class="lb-score" scope="col">Score</th>
+            <th class="lb-date" scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+      <p class="leaderboard-status" id="leaderboard-status" hidden></p>
+    </section>
     <footer class="site-footer">
       <details class="settings">
         <summary>Settings</summary>
