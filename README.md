@@ -11,6 +11,7 @@ see the real price and how close you were. Five misses and the game ends.
 - Guesses within 20% of the real price count as correct
 - No repeated items until you've seen them all
 - Global leaderboard (separate boards for standard and all-items modes)
+- Safe mode by default, so no huge badonkers by default. You can always enable it if you want. (This was originally a school project.)
 
 ## How to Play
 
