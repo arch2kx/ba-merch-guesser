@@ -1,5 +1,6 @@
 export const MAX_MISSES = 5;
 export const CORRECT_RANGE = 20;
+export const ROUND_SECONDS = 20;
 export const YEN_TO_USD = 0.0061;
 
 export const SAFE_LINES = [

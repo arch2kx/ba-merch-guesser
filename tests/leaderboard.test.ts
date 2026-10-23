@@ -5,7 +5,11 @@ import { CORRECT_RANGE, MAX_MISSES, YEN_TO_USD, isSafe, uniqueByName } from "../
 import { buildSeedSql } from "../scripts/gen-seed";
 
 const migrations = await Promise.all(
-  ["20261016000000_leaderboard.sql", "20261023000000_leaderboard_hardening.sql"].map((f) =>
+  [
+    "20261016000000_leaderboard.sql",
+    "20261023000000_leaderboard_hardening.sql",
+    "20261024000000_round_timer.sql",
+  ].map((f) =>
     Bun.file(new URL(`../supabase/migrations/${f}`, import.meta.url)).text(),
   ),
 );
@@ -63,6 +67,11 @@ async function start(mode = "safe") {
   return call<{ session_id: string; round: number; item: Item }>("start_game", [mode]);
 }
 
+async function next(sessionId: string, round: number): Promise<Item> {
+  const r: any = await call("next_item", [sessionId, round]);
+  return r.item;
+}
+
 function priceOf(item: Item) {
   const p = priceByName.get(item.name);
   if (p === undefined) throw new Error(`unknown item ${item.name}`);
@@ -80,7 +89,7 @@ async function playToEnd(sessionId: string, first: Item, hits: number) {
     if (made < hits) made++;
     round = last.round;
     if (last.game_over) return last;
-    item = last.next_item;
+    item = await next(sessionId, round);
   }
 }
 
@@ -164,7 +173,7 @@ describe("gameplay", () => {
     for (let i = 1; i < safeCount; i++) {
       const r: any = await call("submit_guess", [s.session_id, round, priceOf(item)]);
       round = r.round;
-      item = r.next_item;
+      item = await next(s.session_id, round);
       seen.push(item.name);
     }
     expect(seen.every(isSafe)).toBe(true);
@@ -180,7 +189,7 @@ describe("gameplay", () => {
     expect(hit.misses).toBe(0);
     expect(Number(hit.real_price)).toBeCloseTo(price, 6);
 
-    const price2 = priceOf(hit.next_item);
+    const price2 = priceOf(await next(s.session_id, 1));
     const miss: any = await call("submit_guess", [s.session_id, 1, price2 * (1 + CORRECT_RANGE / 100) * 1.001]);
     expect(miss.correct).toBe(false);
     expect(miss.score).toBe(1);
@@ -193,7 +202,8 @@ describe("gameplay", () => {
     expect(last.game_over).toBe(true);
     expect(last.score).toBe(3);
     expect(last.misses).toBe(MAX_MISSES);
-    expect(last.next_item).toBeNull();
+    expect(last.next_item).toBeUndefined();
+    await expect(call("next_item", [s.session_id, last.round])).rejects.toThrow(/game_over/);
     expect(last.round).toBe(3 + MAX_MISSES);
     await expect(call("submit_guess", [s.session_id, last.round, 1])).rejects.toThrow(/game_over/);
   });
@@ -210,7 +220,7 @@ describe("gameplay", () => {
 
   test("rejects invalid guesses without consuming the round", async () => {
     const s = await start("all");
-    for (const bad of [0, -5, "NaN", "Infinity", 1e12, null]) {
+    for (const bad of [0, -5, "NaN", "Infinity", 1e12]) {
       await expect(call("submit_guess", [s.session_id, 0, bad])).rejects.toThrow(/invalid_guess/);
     }
     const ok: any = await call("submit_guess", [s.session_id, 0, priceOf(s.item)]);
@@ -221,6 +231,7 @@ describe("gameplay", () => {
   test("unknown sessions are rejected", async () => {
     const fake = "00000000-0000-0000-0000-000000000000";
     await expect(call("submit_guess", [fake, 0, 10])).rejects.toThrow(/unknown_session/);
+    await expect(call("next_item", [fake, 0])).rejects.toThrow(/unknown_session/);
     await expect(call("submit_score", [fake, "x"])).rejects.toThrow(/unknown_session/);
   });
 });
@@ -338,5 +349,59 @@ describe("rate limits", () => {
     }
     for (const id of sessions.slice(0, 10)) await call("submit_score", [id, "Burst"]);
     await expect(call("submit_score", [sessions[10], "Burst"])).rejects.toThrow(/rate_limited/);
+  });
+});
+
+describe("round timer", () => {
+  test("guesses never reveal the next item; next_item starts the clock", async () => {
+    const s = await start("all");
+    const r: any = await call("submit_guess", [s.session_id, 0, priceOf(s.item)]);
+    expect(r).not.toHaveProperty("next_item");
+    await expect(call("submit_guess", [s.session_id, 1, 10])).rejects.toThrow(/round_not_started/);
+    await expect(call("next_item", [s.session_id, 0])).rejects.toThrow(/stale_round/);
+
+    const a: any = await call("next_item", [s.session_id, 1]);
+    expect(Object.keys(a.item).sort()).toEqual(["id", "image_url", "name"]);
+    expect(Number(a.seconds_left)).toBeGreaterThan(19);
+
+    await db.query(
+      "update public.game_sessions set round_started_at = round_started_at - interval '8 seconds' where id = $1",
+      [s.session_id],
+    );
+    const b: any = await call("next_item", [s.session_id, 1]);
+    expect(b.item).toEqual(a.item);
+    expect(Number(b.seconds_left)).toBeLessThan(13);
+  });
+
+  test("late guesses count as misses even when exact", async () => {
+    const s = await start("all");
+    await db.query(
+      "update public.game_sessions set round_started_at = now() - interval '24 seconds' where id = $1",
+      [s.session_id],
+    );
+    const r: any = await call("submit_guess", [s.session_id, 0, priceOf(s.item)]);
+    expect(r.correct).toBe(false);
+    expect(r.timed_out).toBe(true);
+    expect(r.percent_off).toBeNull();
+    expect(r.misses).toBe(1);
+  });
+
+  test("guesses within the grace window still count", async () => {
+    const s = await start("all");
+    await db.query(
+      "update public.game_sessions set round_started_at = now() - interval '22 seconds' where id = $1",
+      [s.session_id],
+    );
+    const r: any = await call("submit_guess", [s.session_id, 0, priceOf(s.item)]);
+    expect(r.correct).toBe(true);
+    expect(r.timed_out).toBe(false);
+  });
+
+  test("a null guess is a timeout miss", async () => {
+    const s = await start("all");
+    const r: any = await call("submit_guess", [s.session_id, 0, null]);
+    expect(r.correct).toBe(false);
+    expect(r.timed_out).toBe(true);
+    expect(r.misses).toBe(1);
   });
 });

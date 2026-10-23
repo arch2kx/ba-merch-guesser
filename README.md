@@ -37,8 +37,9 @@ leaderboard is hidden.
 The leaderboard runs on [Supabase](https://supabase.com). The server runs
 the game: it picks items, grades guesses and keeps score, so the browser
 never sends a score it could fake. Tables are locked down, and the browser
-can only call three functions: `start_game`, `submit_guess` and
-`get_leaderboard`. Saving a score goes through the `leaderboard-submit` edge
+can only call four functions: `start_game`, `next_item`, `submit_guess` and
+`get_leaderboard`. Each item is only revealed by `next_item`, which starts a
+20-second clock on the server; late guesses count as misses. Saving a score goes through the `leaderboard-submit` edge
 function, which checks the request's origin and an hCaptcha token before it
 calls `submit_score` with the service role key. New games and leaderboard
 entries are rate limited in the database.

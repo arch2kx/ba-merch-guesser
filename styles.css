@@ -208,6 +208,17 @@ button:hover {
   font-size: 1.1rem;
 }
 
+.timer {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+}
+
+.timer.wrong {
+  color: var(--color-wrong);
+}
+
 .score-captcha {
   margin-top: 0.75rem;
 }

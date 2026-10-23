@@ -2,6 +2,7 @@ import { SUPABASE_ANON_KEY, SUPABASE_URL } from "./config";
 import {
   CORRECT_RANGE,
   MAX_MISSES,
+  ROUND_SECONDS,
   YEN_TO_USD,
   isSafe,
   uniqueByName,
@@ -17,12 +18,17 @@ export interface Item {
 
 export interface GuessResult {
   correct: boolean;
-  percentOff: number;
+  timedOut: boolean;
+  percentOff: number | null;
   realPrice: number;
   score: number;
   misses: number;
   gameOver: boolean;
-  nextItem: Item | null;
+}
+
+export interface Round {
+  item: Item;
+  secondsLeft: number;
 }
 
 export interface SubmitResult {
@@ -40,7 +46,8 @@ export interface LeaderboardEntry {
 export interface Game {
   readonly online: boolean;
   readonly firstItem: Item;
-  guess(value: number): Promise<GuessResult>;
+  guess(value: number | null): Promise<GuessResult>;
+  next(): Promise<Round>;
   submitScore(name: string, captcha: string): Promise<SubmitResult>;
 }
 
@@ -102,12 +109,18 @@ interface RemoteStart {
 interface RemoteGuess {
   round: number;
   correct: boolean;
-  percent_off: number;
+  timed_out: boolean;
+  percent_off: number | null;
   real_price: number;
   score: number;
   misses: number;
   game_over: boolean;
-  next_item: Item | null;
+}
+
+interface RemoteNext {
+  round: number;
+  item: Item;
+  seconds_left: number;
 }
 
 class RemoteGame implements Game {
@@ -124,7 +137,7 @@ class RemoteGame implements Game {
     return new RemoteGame(data.session_id, data.round, data.item);
   }
 
-  async guess(value: number): Promise<GuessResult> {
+  async guess(value: number | null): Promise<GuessResult> {
     const data = await rpc<RemoteGuess>("submit_guess", {
       p_session_id: this.sessionId,
       p_round: this.round,
@@ -133,13 +146,21 @@ class RemoteGame implements Game {
     this.round = data.round;
     return {
       correct: data.correct,
-      percentOff: Number(data.percent_off),
+      timedOut: data.timed_out,
+      percentOff: data.percent_off === null ? null : Number(data.percent_off),
       realPrice: Number(data.real_price),
       score: data.score,
       misses: data.misses,
       gameOver: data.game_over,
-      nextItem: data.next_item,
     };
+  }
+
+  async next(): Promise<Round> {
+    const data = await rpc<RemoteNext>("next_item", {
+      p_session_id: this.sessionId,
+      p_round: this.round,
+    });
+    return { item: data.item, secondsLeft: Number(data.seconds_left) };
   }
 
   submitScore(name: string, captcha: string): Promise<SubmitResult> {
@@ -220,32 +241,33 @@ class LocalGame implements Game {
     return item;
   }
 
-  async guess(value: number): Promise<GuessResult> {
+  async guess(value: number | null): Promise<GuessResult> {
     if (this.misses >= MAX_MISSES) throw new ApiError("Game over.", "game_over");
 
     const realPrice = this.current.price * YEN_TO_USD;
-    const percentOff = (Math.abs(value - realPrice) / realPrice) * 100;
-    const correct = percentOff <= CORRECT_RANGE;
+    const percentOff =
+      value === null ? null : (Math.abs(value - realPrice) / realPrice) * 100;
+    const correct = percentOff !== null && percentOff <= CORRECT_RANGE;
 
     if (correct) this.score += 1;
     else this.misses += 1;
 
     const gameOver = this.misses >= MAX_MISSES;
-    let nextItem: Item | null = null;
-    if (!gameOver) {
-      this.current = this.draw();
-      nextItem = this.current;
-    }
+    if (!gameOver) this.current = this.draw();
 
     return {
       correct,
+      timedOut: value === null,
       percentOff,
       realPrice,
       score: this.score,
       misses: this.misses,
       gameOver,
-      nextItem,
     };
+  }
+
+  async next(): Promise<Round> {
+    return { item: this.current, secondsLeft: ROUND_SECONDS };
   }
 
   async submitScore(): Promise<SubmitResult> {
@@ -277,6 +299,7 @@ const ERROR_MESSAGES: Record<string, string> = {
   score_too_low: "You need at least 1 point to join the leaderboard.",
   invalid_name: "Name must be 1–20 characters.",
   no_items: "No items available.",
+  round_not_started: "This round is out of sync. Press Play Again to start a new game.",
   rate_limited: "The leaderboard is busy. Try again in a minute.",
   captcha_failed: "Captcha check failed. Please try again.",
   captcha_unavailable: "Couldn't verify the captcha. Try again.",

@@ -5,9 +5,10 @@ import {
   startGame,
   type Game,
   type Item,
+  type Round,
 } from "./api";
 import { HCAPTCHA_SITEKEY } from "./config";
-import { NAME_MAX, cleanName, type Mode } from "./shared";
+import { NAME_MAX, ROUND_SECONDS, cleanName, type Mode } from "./shared";
 
 interface HCaptcha {
   render(container: HTMLElement, params: { sitekey: string; theme?: string }): string;
@@ -26,12 +27,14 @@ let isGameOver = false;
 let busy = false;
 let game: Game | null = null;
 let currentItem: Item | null = null;
-let pendingItem: Item | null = null;
 let gameToken = 0;
+let deadline = 0;
+let timerHandle: number | null = null;
 
 const priceCounterEl = document.getElementById("price-counter") as HTMLElement;
 const priceLineEl = document.getElementById("price-line") as HTMLElement;
 const outputEl = document.getElementById("output") as HTMLElement;
+const timerEl = document.getElementById("timer") as HTMLElement;
 const inputEl = document.getElementById("price-input") as HTMLInputElement;
 const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
 const nextBtn = document.getElementById("next-btn") as HTMLButtonElement;
@@ -112,7 +115,33 @@ function showItem(item: Item, nameId: string, imageId: string) {
   }
 }
 
+function stopTimer() {
+  if (timerHandle !== null) {
+    window.clearInterval(timerHandle);
+    timerHandle = null;
+  }
+}
+
+function tick() {
+  const left = Math.max(0, Math.ceil((deadline - performance.now()) / 1000));
+  timerEl.textContent = `${left}s`;
+  timerEl.classList.toggle("wrong", left <= 5);
+  if (left === 0) {
+    stopTimer();
+    void submitRound(true);
+  }
+}
+
+function runTimer() {
+  stopTimer();
+  timerEl.hidden = false;
+  tick();
+  if (performance.now() < deadline) timerHandle = window.setInterval(tick, 200);
+}
+
 function resetRoundUi() {
+  stopTimer();
+  timerEl.hidden = true;
   nextBtn.hidden = true;
   outputEl.hidden = true;
   priceLineEl.hidden = true;
@@ -121,26 +150,52 @@ function resetRoundUi() {
   inputEl.value = "";
 }
 
-function newRound() {
+function showRound(round: Round) {
   resetRoundUi();
   inputEl.disabled = false;
   submitBtn.disabled = false;
 
-  currentItem = pendingItem;
-  pendingItem = null;
-  if (!currentItem) return;
+  currentItem = round.item;
   showItem(currentItem, "item-name-a", "item-image-a");
+  deadline = performance.now() + Math.min(round.secondsLeft, ROUND_SECONDS) * 1000;
+  runTimer();
 
   inputEl.focus({ preventScroll: true });
   inputEl.scrollIntoView({ behavior: "smooth", block: "end" });
 }
 
-async function submitRound() {
+async function nextRound() {
+  if (!game || busy || isGameOver) return;
+  const token = gameToken;
+  busy = true;
+  nextBtn.disabled = true;
+
+  let round: Round;
+  try {
+    round = await game.next();
+  } catch (err) {
+    if (token !== gameToken) return;
+    busy = false;
+    nextBtn.disabled = false;
+    outputEl.textContent = errorMessage(err);
+    outputEl.hidden = false;
+    return;
+  }
+  if (token !== gameToken) return;
+  busy = false;
+  nextBtn.disabled = false;
+  showRound(round);
+}
+
+async function submitRound(timedOut = false) {
   if (!game || !currentItem || busy || isGameOver) return;
 
   const guess = Number(inputEl.value);
 
-  if (inputEl.value === "" || !Number.isFinite(guess) || guess <= 0) {
+  if (
+    !timedOut &&
+    (inputEl.value === "" || !Number.isFinite(guess) || guess <= 0)
+  ) {
     outputEl.textContent = "Invalid input! Try again.";
     outputEl.hidden = false;
     return;
@@ -148,26 +203,32 @@ async function submitRound() {
 
   const token = gameToken;
   busy = true;
+  stopTimer();
   submitBtn.disabled = true;
   inputEl.disabled = true;
 
   let result;
   try {
-    result = await game.guess(guess);
+    result = await game.guess(timedOut ? null : guess);
   } catch (err) {
     if (token !== gameToken) return;
     busy = false;
-    submitBtn.disabled = false;
-    inputEl.disabled = false;
     outputEl.textContent = errorMessage(err);
     outputEl.hidden = false;
+    if (timedOut) {
+      nextBtn.textContent = "Retry";
+      nextBtn.hidden = false;
+      isGameOver = true;
+      return;
+    }
+    submitBtn.disabled = false;
+    inputEl.disabled = false;
+    runTimer();
     return;
   }
   if (token !== gameToken) return;
   busy = false;
-
-  pendingItem = result.nextItem;
-  if (pendingItem) new Image().src = pendingItem.image_url;
+  timerEl.hidden = true;
 
   outputEl.classList.add(result.correct ? "correct" : "wrong");
   nextBtn.hidden = false;
@@ -178,7 +239,10 @@ async function submitRound() {
     return;
   }
 
-  outputEl.textContent = `You were ${result.percentOff.toFixed(0)}% off!`;
+  outputEl.textContent =
+    result.percentOff === null
+      ? "Time's up!"
+      : `You were ${result.percentOff.toFixed(0)}% off!`;
   outputEl.hidden = false;
   priceLineEl.hidden = false;
   animateNumber(priceCounterEl, result.realPrice, 800, () => {
@@ -242,8 +306,8 @@ async function startNewGame() {
   isGameOver = false;
   game = null;
   currentItem = null;
-  pendingItem = null;
   nextBtn.textContent = "Next";
+  nextBtn.disabled = false;
   hideScoreForm();
   resetRoundUi();
   inputEl.disabled = true;
@@ -264,8 +328,7 @@ async function startNewGame() {
   if (token !== gameToken) return;
 
   game = started;
-  pendingItem = started.firstItem;
-  newRound();
+  showRound({ item: started.firstItem, secondsLeft: ROUND_SECONDS });
 
   if (leaderboardEnabled && !started.online) {
     outputEl.textContent =
@@ -388,7 +451,7 @@ nextBtn.addEventListener("click", () => {
   if (isGameOver) {
     void startNewGame();
   } else {
-    newRound();
+    void nextRound();
   }
 });
 scoreForm.addEventListener("submit", (event) => void saveScore(event));
