@@ -41,7 +41,7 @@ export interface Game {
   readonly online: boolean;
   readonly firstItem: Item;
   guess(value: number): Promise<GuessResult>;
-  submitScore(name: string): Promise<SubmitResult>;
+  submitScore(name: string, captcha: string): Promise<SubmitResult>;
 }
 
 export class ApiError extends Error {
@@ -55,7 +55,7 @@ export class ApiError extends Error {
 
 export const leaderboardEnabled = SUPABASE_URL !== "" && SUPABASE_ANON_KEY !== "";
 
-async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
+async function post<T>(path: string, args: Record<string, unknown>): Promise<T> {
   const headers: Record<string, string> = {
     apikey: SUPABASE_ANON_KEY,
     "Content-Type": "application/json",
@@ -66,7 +66,7 @@ async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
 
   let res: Response;
   try {
-    res = await fetch(`${SUPABASE_URL.replace(/\/+$/, "")}/rest/v1/rpc/${fn}`, {
+    res = await fetch(`${SUPABASE_URL.replace(/\/+$/, "")}${path}`, {
       method: "POST",
       headers,
       body: JSON.stringify(args),
@@ -79,13 +79,18 @@ async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
   if (!res.ok) {
     let code: string | null = null;
     try {
-      const body = (await res.json()) as { message?: unknown } | null;
+      const body = (await res.json()) as { message?: unknown; error?: unknown } | null;
       if (typeof body?.message === "string") code = body.message;
+      else if (typeof body?.error === "string") code = body.error;
     } catch {}
     throw new ApiError(code ?? `Server error (${res.status}).`, code);
   }
 
   return (await res.json()) as T;
+}
+
+function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
+  return post<T>(`/rest/v1/rpc/${fn}`, args);
 }
 
 interface RemoteStart {
@@ -137,10 +142,11 @@ class RemoteGame implements Game {
     };
   }
 
-  submitScore(name: string): Promise<SubmitResult> {
-    return rpc<SubmitResult>("submit_score", {
-      p_session_id: this.sessionId,
-      p_name: name,
+  submitScore(name: string, captcha: string): Promise<SubmitResult> {
+    return post<SubmitResult>("/functions/v1/leaderboard-submit", {
+      session_id: this.sessionId,
+      name,
+      captcha,
     });
   }
 }
@@ -271,6 +277,9 @@ const ERROR_MESSAGES: Record<string, string> = {
   score_too_low: "You need at least 1 point to join the leaderboard.",
   invalid_name: "Name must be 1–20 characters.",
   no_items: "No items available.",
+  rate_limited: "The leaderboard is busy. Try again in a minute.",
+  captcha_failed: "Captcha check failed. Please try again.",
+  captcha_unavailable: "Couldn't verify the captcha. Try again.",
 };
 
 export function errorMessage(err: unknown): string {

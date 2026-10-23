@@ -6,7 +6,21 @@ import {
   type Game,
   type Item,
 } from "./api";
+import { HCAPTCHA_SITEKEY } from "./config";
 import { NAME_MAX, cleanName, type Mode } from "./shared";
+
+interface HCaptcha {
+  render(container: HTMLElement, params: { sitekey: string; theme?: string }): string;
+  getResponse(widgetId?: string): string;
+  reset(widgetId?: string): void;
+}
+
+declare global {
+  interface Window {
+    hcaptcha?: HCaptcha;
+    onScoreCaptchaLoad?: () => void;
+  }
+}
 
 let isGameOver = false;
 let busy = false;
@@ -35,6 +49,7 @@ const saveScoreBtn = document.getElementById(
 const scoreStatusEl = document.getElementById(
   "score-form-status",
 ) as HTMLElement;
+const captchaEl = document.getElementById("score-captcha") as HTMLElement;
 const leaderboardEl = document.getElementById("leaderboard") as HTMLElement;
 const leaderboardBody = document.getElementById(
   "leaderboard-body",
@@ -55,6 +70,30 @@ allItemsToggle.checked = mode === "all";
 let leaderboardMode: Mode = mode;
 let leaderboardToken = 0;
 let highlightId: number | null = null;
+let captchaWidgetId: string | null = null;
+let captchaRequested = false;
+
+function loadCaptcha() {
+  if (captchaRequested) return;
+  captchaRequested = true;
+  window.onScoreCaptchaLoad = () => {
+    if (window.hcaptcha === undefined) return;
+    captchaWidgetId = window.hcaptcha.render(captchaEl, {
+      sitekey: HCAPTCHA_SITEKEY,
+    });
+  };
+  const script = document.createElement("script");
+  script.src =
+    "https://js.hcaptcha.com/1/api.js?render=explicit&onload=onScoreCaptchaLoad";
+  script.async = true;
+  document.head.appendChild(script);
+}
+
+function resetCaptcha() {
+  if (window.hcaptcha !== undefined && captchaWidgetId !== null) {
+    window.hcaptcha.reset(captchaWidgetId);
+  }
+}
 
 function showItem(item: Item, nameId: string, imageId: string) {
   const nameEl = document.getElementById(nameId);
@@ -185,6 +224,8 @@ function gameOver(score: number) {
     saveScoreBtn.disabled = false;
     scoreStatusEl.hidden = true;
     scoreStatusEl.classList.remove("wrong");
+    loadCaptcha();
+    resetCaptcha();
     nameInput.focus({ preventScroll: true });
   }
 }
@@ -246,6 +287,17 @@ async function saveScore(event: SubmitEvent) {
     return;
   }
 
+  const captcha =
+    window.hcaptcha !== undefined && captchaWidgetId !== null
+      ? window.hcaptcha.getResponse(captchaWidgetId)
+      : "";
+  if (captcha === "") {
+    scoreStatusEl.textContent = "Please complete the captcha.";
+    scoreStatusEl.classList.add("wrong");
+    scoreStatusEl.hidden = false;
+    return;
+  }
+
   const token = gameToken;
   const savedMode = mode;
   nameInput.disabled = true;
@@ -253,7 +305,7 @@ async function saveScore(event: SubmitEvent) {
   scoreStatusEl.hidden = true;
 
   try {
-    const result = await game.submitScore(name);
+    const result = await game.submitScore(name, captcha);
     if (token !== gameToken) return;
     highlightId = result.id;
     scoreFormGroup.hidden = true;
@@ -263,6 +315,7 @@ async function saveScore(event: SubmitEvent) {
     setLeaderboardMode(savedMode);
   } catch (err) {
     if (token !== gameToken) return;
+    resetCaptcha();
     nameInput.disabled = false;
     saveScoreBtn.disabled = false;
     scoreStatusEl.textContent = errorMessage(err);

@@ -208,6 +208,10 @@ button:hover {
   font-size: 1.1rem;
 }
 
+.score-captcha {
+  margin-top: 0.75rem;
+}
+
 .score-form-status {
   margin: 0.75rem 0 0;
   font-size: 1.1rem;

@@ -1,6 +1,7 @@
 // js/config.ts
 var SUPABASE_URL = "https://iaskkeooqemjgqcoreyv.supabase.co";
 var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlhc2trZW9vcWVtamdxY29yZXl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxMjEwNTgsImV4cCI6MjEwNzY5NzA1OH0.UoJDSAPpUUMwTn4NgU2eRKvMR3rjhig9WhnhZNIa3PY";
+var HCAPTCHA_SITEKEY = "f5e65868-4a5a-4866-8d56-a2fe03a0e444";
 
 // js/shared.ts
 var MAX_MISSES = 5;
@@ -40,7 +41,7 @@ class ApiError extends Error {
   }
 }
 var leaderboardEnabled = SUPABASE_URL !== "" && SUPABASE_ANON_KEY !== "";
-async function rpc(fn, args) {
+async function post(path, args) {
   const headers = {
     apikey: SUPABASE_ANON_KEY,
     "Content-Type": "application/json"
@@ -50,7 +51,7 @@ async function rpc(fn, args) {
   }
   let res;
   try {
-    res = await fetch(`${SUPABASE_URL.replace(/\/+$/, "")}/rest/v1/rpc/${fn}`, {
+    res = await fetch(`${SUPABASE_URL.replace(/\/+$/, "")}${path}`, {
       method: "POST",
       headers,
       body: JSON.stringify(args),
@@ -65,10 +66,15 @@ async function rpc(fn, args) {
       const body = await res.json();
       if (typeof body?.message === "string")
         code = body.message;
+      else if (typeof body?.error === "string")
+        code = body.error;
     } catch {}
     throw new ApiError(code ?? `Server error (${res.status}).`, code);
   }
   return await res.json();
+}
+function rpc(fn, args) {
+  return post(`/rest/v1/rpc/${fn}`, args);
 }
 
 class RemoteGame {
@@ -102,10 +108,11 @@ class RemoteGame {
       nextItem: data.next_item
     };
   }
-  submitScore(name) {
-    return rpc("submit_score", {
-      p_session_id: this.sessionId,
-      p_name: name
+  submitScore(name, captcha) {
+    return post("/functions/v1/leaderboard-submit", {
+      session_id: this.sessionId,
+      name,
+      captcha
     });
   }
 }
@@ -218,7 +225,10 @@ var ERROR_MESSAGES = {
   game_not_over: "Finish the game before saving your score.",
   score_too_low: "You need at least 1 point to join the leaderboard.",
   invalid_name: "Name must be 1–20 characters.",
-  no_items: "No items available."
+  no_items: "No items available.",
+  rate_limited: "The leaderboard is busy. Try again in a minute.",
+  captcha_failed: "Captcha check failed. Please try again.",
+  captcha_unavailable: "Couldn't verify the captcha. Try again."
 };
 function errorMessage(err) {
   if (err instanceof ApiError) {
@@ -246,6 +256,7 @@ var scoreFormGroup = document.getElementById("score-form-group");
 var nameInput = document.getElementById("name-input");
 var saveScoreBtn = document.getElementById("save-score-btn");
 var scoreStatusEl = document.getElementById("score-form-status");
+var captchaEl = document.getElementById("score-captcha");
 var leaderboardEl = document.getElementById("leaderboard");
 var leaderboardBody = document.getElementById("leaderboard-body");
 var leaderboardStatus = document.getElementById("leaderboard-status");
@@ -255,6 +266,29 @@ allItemsToggle.checked = mode === "all";
 var leaderboardMode = mode;
 var leaderboardToken = 0;
 var highlightId = null;
+var captchaWidgetId = null;
+var captchaRequested = false;
+function loadCaptcha() {
+  if (captchaRequested)
+    return;
+  captchaRequested = true;
+  window.onScoreCaptchaLoad = () => {
+    if (window.hcaptcha === undefined)
+      return;
+    captchaWidgetId = window.hcaptcha.render(captchaEl, {
+      sitekey: HCAPTCHA_SITEKEY
+    });
+  };
+  const script = document.createElement("script");
+  script.src = "https://js.hcaptcha.com/1/api.js?render=explicit&onload=onScoreCaptchaLoad";
+  script.async = true;
+  document.head.appendChild(script);
+}
+function resetCaptcha() {
+  if (window.hcaptcha !== undefined && captchaWidgetId !== null) {
+    window.hcaptcha.reset(captchaWidgetId);
+  }
+}
 function showItem(item, nameId, imageId) {
   const nameEl = document.getElementById(nameId);
   if (nameEl) {
@@ -363,6 +397,8 @@ function gameOver(score) {
     saveScoreBtn.disabled = false;
     scoreStatusEl.hidden = true;
     scoreStatusEl.classList.remove("wrong");
+    loadCaptcha();
+    resetCaptcha();
     nameInput.focus({ preventScroll: true });
   }
 }
@@ -418,13 +454,20 @@ async function saveScore(event) {
     scoreStatusEl.hidden = false;
     return;
   }
+  const captcha = window.hcaptcha !== undefined && captchaWidgetId !== null ? window.hcaptcha.getResponse(captchaWidgetId) : "";
+  if (captcha === "") {
+    scoreStatusEl.textContent = "Please complete the captcha.";
+    scoreStatusEl.classList.add("wrong");
+    scoreStatusEl.hidden = false;
+    return;
+  }
   const token = gameToken;
   const savedMode = mode;
   nameInput.disabled = true;
   saveScoreBtn.disabled = true;
   scoreStatusEl.hidden = true;
   try {
-    const result = await game.submitScore(name);
+    const result = await game.submitScore(name, captcha);
     if (token !== gameToken)
       return;
     highlightId = result.id;
@@ -436,6 +479,7 @@ async function saveScore(event) {
   } catch (err) {
     if (token !== gameToken)
       return;
+    resetCaptcha();
     nameInput.disabled = false;
     saveScoreBtn.disabled = false;
     scoreStatusEl.textContent = errorMessage(err);

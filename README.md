@@ -37,14 +37,25 @@ leaderboard is hidden.
 The leaderboard runs on [Supabase](https://supabase.com). The server runs
 the game: it picks items, grades guesses and keeps score, so the browser
 never sends a score it could fake. Tables are locked down, and the browser
-can only call four functions: `start_game`, `submit_guess`, `submit_score`
-and `get_leaderboard`.
+can only call three functions: `start_game`, `submit_guess` and
+`get_leaderboard`. Saving a score goes through the `leaderboard-submit` edge
+function, which checks the request's origin and an hCaptcha token before it
+calls `submit_score` with the service role key. New games and leaderboard
+entries are rate limited in the database.
 
 1. Create a Supabase project.
-2. In the SQL editor, run `supabase/migrations/20261016000000_leaderboard.sql`,
-   then `supabase/seed.sql`.
-3. Put the project URL and anon/publishable key in `js/config.ts`.
-4. Rebuild: `bun run build`.
+2. In the SQL editor, run the files in `supabase/migrations/` in order, then
+   `supabase/seed.sql`.
+3. Put the project URL and anon/publishable key in `js/config.ts`, along with
+   your hCaptcha sitekey.
+4. Deploy the edge function and set its secrets:
+   ```sh
+   supabase link --project-ref <ref>
+   supabase functions deploy leaderboard-submit
+   supabase secrets set HCAPTCHA_SECRET=<secret> HCAPTCHA_SITEKEY=<sitekey> \
+     ALLOWED_ORIGINS=https://arch2kx.github.io
+   ```
+5. Rebuild: `bun run build`.
 
 When `js/baAmiData.json` changes, run `bun run seed` and run the new
 `supabase/seed.sql` again.

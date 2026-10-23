@@ -1,12 +1,14 @@
-import { beforeAll, describe, expect, test } from "bun:test";
+import { beforeAll, beforeEach, describe, expect, test } from "bun:test";
 import { PGlite } from "@electric-sql/pglite";
 import baAmiInfo from "../js/baAmiData.json";
 import { CORRECT_RANGE, MAX_MISSES, YEN_TO_USD, isSafe, uniqueByName } from "../js/shared";
 import { buildSeedSql } from "../scripts/gen-seed";
 
-const migration = await Bun.file(
-  new URL("../supabase/migrations/20261016000000_leaderboard.sql", import.meta.url),
-).text();
+const migrations = await Promise.all(
+  ["20261016000000_leaderboard.sql", "20261023000000_leaderboard_hardening.sql"].map((f) =>
+    Bun.file(new URL(`../supabase/migrations/${f}`, import.meta.url)).text(),
+  ),
+);
 
 const uniqueItems = uniqueByName(baAmiInfo.items);
 const priceByName = new Map(uniqueItems.map((i) => [i.name, i.price * YEN_TO_USD]));
@@ -18,14 +20,22 @@ beforeAll(async () => {
   await db.exec(`
     create role anon nologin;
     create role authenticated nologin;
-    grant usage on schema public to anon, authenticated;
+    create role service_role nologin bypassrls;
+    grant usage on schema public to anon, authenticated, service_role;
   `);
-  await db.exec(migration);
+  for (const m of migrations) await db.exec(m);
   await db.exec(buildSeedSql(baAmiInfo.items));
 });
 
-async function asAnon<T>(sql: string, params: unknown[] = []): Promise<T[]> {
-  await db.exec("set role anon");
+beforeEach(async () => {
+  await db.exec(`
+    update public.game_sessions set created_at = created_at - interval '1 hour';
+    update public.leaderboard set created_at = created_at - interval '1 hour';
+  `);
+});
+
+async function asRole<T>(role: string, sql: string, params: unknown[] = []): Promise<T[]> {
+  await db.exec(`set role ${role}`);
   try {
     return (await db.query<T>(sql, params)).rows;
   } finally {
@@ -33,10 +43,18 @@ async function asAnon<T>(sql: string, params: unknown[] = []): Promise<T[]> {
   }
 }
 
-async function call<T = any>(fn: string, args: unknown[]): Promise<T> {
+function asAnon<T>(sql: string, params: unknown[] = []): Promise<T[]> {
+  return asRole<T>("anon", sql, params);
+}
+
+async function callAs<T = any>(role: string, fn: string, args: unknown[]): Promise<T> {
   const placeholders = args.map((_, i) => `$${i + 1}`).join(", ");
-  const rows = await asAnon<{ r: T }>(`select public.${fn}(${placeholders}) as r`, args);
+  const rows = await asRole<{ r: T }>(role, `select public.${fn}(${placeholders}) as r`, args);
   return rows[0]!.r;
+}
+
+function call<T = any>(fn: string, args: unknown[]): Promise<T> {
+  return callAs<T>(fn === "submit_score" ? "service_role" : "anon", fn, args);
 }
 
 interface Item { id: number; name: string; image_url: string }
@@ -101,6 +119,29 @@ describe("access control", () => {
     await expect(asAnon("select public.lb_item_json(1)")).rejects.toThrow(/permission denied/);
     await expect(asAnon("select public.lb_rank(1)")).rejects.toThrow(/permission denied/);
     await expect(asAnon("select * from public.lb_draw('all', '{}', 1)")).rejects.toThrow(/permission denied/);
+  });
+
+  test("only service_role can submit scores", async () => {
+    const s = await start("safe");
+    await playToEnd(s.session_id, s.item, 1);
+    for (const role of ["anon", "authenticated"]) {
+      await expect(callAs(role, "submit_score", [s.session_id, "Bot"])).rejects.toThrow(/permission denied/);
+    }
+    const ok: any = await call("submit_score", [s.session_id, "Human"]);
+    expect(ok.id).toBeDefined();
+  });
+
+  test("new public objects are not exposed by default", async () => {
+    await db.exec(`
+      create table public.lb_probe (id int);
+      create function public.lb_probe_fn() returns int language sql as 'select 1';
+    `);
+    try {
+      await expect(asAnon("select * from public.lb_probe")).rejects.toThrow(/permission denied/);
+      await expect(asAnon("select public.lb_probe_fn()")).rejects.toThrow(/permission denied/);
+    } finally {
+      await db.exec("drop table public.lb_probe; drop function public.lb_probe_fn();");
+    }
   });
 
   test("start_game never leaks prices", async () => {
@@ -268,5 +309,34 @@ describe("leaderboard", () => {
     expect(rows[0]!.n).toBe(0);
     const lb = await db.query<{ session_id: string | null }>("select session_id from public.leaderboard where id = $1", [r.id]);
     expect(lb.rows[0]!.session_id).toBeNull();
+  });
+});
+
+describe("rate limits", () => {
+  test("start_game is capped per minute", async () => {
+    await db.exec("delete from public.game_sessions where created_at > now() - interval '1 minute'");
+    for (let i = 0; i < 60; i++) await start("safe");
+    await expect(start("safe")).rejects.toThrow(/rate_limited/);
+  });
+
+  test("leaderboard timestamps are server-set", async () => {
+    const { rows } = await db.query<{ created_at: Date }>(`
+      insert into public.leaderboard (name, mode, score, created_at)
+      values ('Backdated', 'safe', 1, '2000-01-01')
+      returning created_at
+    `);
+    expect(Date.now() - rows[0]!.created_at.getTime()).toBeLessThan(60_000);
+    await db.exec("delete from public.leaderboard where name = 'Backdated'");
+  });
+
+  test("leaderboard inserts are capped per minute", async () => {
+    const sessions = [];
+    for (let i = 0; i < 11; i++) {
+      const s = await start("safe");
+      await playToEnd(s.session_id, s.item, 1);
+      sessions.push(s.session_id);
+    }
+    for (const id of sessions.slice(0, 10)) await call("submit_score", [id, "Burst"]);
+    await expect(call("submit_score", [sessions[10], "Burst"])).rejects.toThrow(/rate_limited/);
   });
 });
