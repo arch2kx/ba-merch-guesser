@@ -1,0 +1,53 @@
+name: Supabase keep-alive and auto-revive
+
+on:
+  schedule:
+    - cron: "17 3 */2 * *"
+  workflow_dispatch:
+
+env:
+  PROJECT_REF: iaskkeooqemjgqcoreyv
+  MGMT_API: https://api.supabase.com/v1/projects
+
+jobs:
+  revive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+    steps:
+      - name: Check project status
+        id: status
+        run: |
+          set -o pipefail
+          status=$(curl -fsS "$MGMT_API/$PROJECT_REF" \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" | jq -r '.status')
+          echo "Project status: $status"
+          test -n "$status" -a "$status" != null
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+
+      - name: Restore if paused
+        if: steps.status.outputs.status == 'INACTIVE'
+        run: |
+          curl -fsS -X POST "$MGMT_API/$PROJECT_REF/restore" \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN"
+          for i in $(seq 1 30); do
+            sleep 30
+            status=$(curl -fsS "$MGMT_API/$PROJECT_REF" \
+              -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" | jq -r '.status')
+            echo "Waiting for restore: $status"
+            if [ "$status" = "ACTIVE_HEALTHY" ]; then exit 0; fi
+          done
+          echo "Project did not come back within 15 minutes" >&2
+          exit 1
+
+      - name: Ping the leaderboard
+        run: |
+          curl -fsS --retry 5 --retry-delay 20 --retry-all-errors \
+            -X POST "https://$PROJECT_REF.supabase.co/rest/v1/rpc/get_leaderboard" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"p_mode":"safe","p_limit":1}'
+          echo
