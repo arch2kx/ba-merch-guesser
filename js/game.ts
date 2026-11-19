@@ -7,11 +7,15 @@ import {
   type Item,
   type Round,
 } from "./api";
+
 import { HCAPTCHA_SITEKEY } from "./config";
 import { NAME_MAX, ROUND_SECONDS, cleanName, type Mode } from "./shared";
 
 interface HCaptcha {
-  render(container: HTMLElement, params: { sitekey: string; theme?: string }): string;
+  render(
+    container: HTMLElement,
+    params: { sitekey: string; theme?: string },
+  ): string;
   getResponse(widgetId?: string): string;
   reset(widgetId?: string): void;
 }
@@ -157,7 +161,8 @@ function showRound(round: Round) {
 
   currentItem = round.item;
   showItem(currentItem, "item-name-a", "item-image-a");
-  deadline = performance.now() + Math.min(round.secondsLeft, ROUND_SECONDS) * 1000;
+  deadline =
+    performance.now() + Math.min(round.secondsLeft, ROUND_SECONDS) * 1000;
   runTimer();
 
   inputEl.focus({ preventScroll: true });
